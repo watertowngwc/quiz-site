@@ -1,0 +1,48 @@
+{
+    "name": "Women in tech",
+    "description": "How much do you know about these leading ladies?",
+    "questions": [
+        {
+            "text": "Which big 90's dot-com company has Marissa Mayer as its CEO?",
+            "options": [
+                ["Yahoo", true],
+                ["Microsoft", false],
+                ["eBay", false],
+                ["Google", false]
+            ]
+        },
+        {
+            "text": "Margaret Hamilton was in charge of the code for the Apollo space program, which brought people to the moon. She did this in:",
+            "options": [
+                ["New York", false],
+                ["Dallas", false],
+                ["Houston", false],
+                ["Oklahoma", false]
+                ["Cambridge", true],
+            ]
+        },
+        {
+            "text": "Which one of these companies was NOT started by a woman?",
+            "options": [
+                ["23andme", false],
+                ["Lyft", false],
+                ["Eventbrite", false]
+                ["Code for America", false],
+            ]
+        },
+        {
+            "text": "Boys/men are better at programming than girls/women",
+            "options": [
+                ["True", false],
+                ["False", true]
+            ]
+        },
+        {
+            "text": "When something is hard, it's best to:",
+            "options": [
+                ["Keep trying", true],
+                ["Not keep trying", false]
+            ]
+        }
+    ]
+}

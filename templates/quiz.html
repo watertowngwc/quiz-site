@@ -2,7 +2,6 @@
 {% block page_title %}{{quiz['name']}}{% endblock %}
 {% block questions %}
     <form method="post" action="/check_quiz/{{id}}">
-        <input type="hidden" name="ord" value="{{quiz_ordering}}" />
 
         {% for question in quiz['questions'] %}
             {% set outer_loop = loop %}
