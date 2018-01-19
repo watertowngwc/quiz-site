@@ -17,8 +17,8 @@
                 ["New York", false],
                 ["Dallas", false],
                 ["Houston", false],
-                ["Oklahoma", false]
-                ["Cambridge", true],
+                ["Oklahoma", false],
+                ["Cambridge", true]
             ]
         },
         {
@@ -26,8 +26,8 @@
             "options": [
                 ["23andme", false],
                 ["Lyft", false],
-                ["Eventbrite", false]
-                ["Code for America", false],
+                ["Eventbrite", false],
+                ["Code for America", false]
             ]
         },
         {
