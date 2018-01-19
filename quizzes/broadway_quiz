@@ -1,0 +1,51 @@
+{
+    "name": "Broadway!",
+    "description": "How much do you know about the theatre?",
+    "questions": [
+        {
+            "text": "Which groundbreaking musical about mental illness and friendship won a total of six Tonys in 2017?",
+            "options": [
+                ["Groundhog Day", false],
+                ["Dear Evan Hansen", true],
+                ["Come From Away", false],
+                ["Natasha, Pierre, and the Great Comet of 1812", false]
+            ]
+        },
+        {
+            "text": "In which show is a demon barber the main character?",
+            "options":[
+                ["Wicked", false],
+                ["Falsettos", false],
+                ["Oklahoma!", false],
+                ["Sweeney Todd", true]
+            ]
+        },
+        {
+            "text": "Which show involves the topic of segregation in the 60s, is a dance heavy show, and recently got a live version of the show?",
+            "options": [
+                ["Peter Pan", false],
+                ["Hairspray", true],
+                ["The Addams Family", false],
+                ["West Side Story", false]
+            ]
+        },
+        {
+            "text": "Which show was written by Lin Manuel Miranda and won many Tonys in 2016?",
+            "options": [
+                ["In the Heights", false],
+                ["Hamilton", true],
+                ["21 Chump Street", false],
+                ["The Little Mermaid", false]
+            ]
+        },
+        {
+            "text": "Which show contains the two famous songs 'All That Jazz' and 'Cell Block Tango'?",
+            "options": [
+                ["Chicago", true],
+                ["The Lion King", false],
+                ["Peter Pan", false],
+                ["Spring Awakening", false]
+            ]
+        }
+    ]
+}
