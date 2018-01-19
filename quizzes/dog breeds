@@ -1,0 +1,25 @@
+{
+    "name": "dog breeds",
+    "description": "How much do you know about dog breeds?",
+    "questions": [
+        {
+            "text": "what is Americas most popular dog breed",
+            "options": [
+                ["German shepherd",false ],
+                ["Golden retrivers", false],
+                ["labbordor", true],
+                ["Bulldogs", false]
+            ]
+        },
+        {
+            "text": "what breed of dog lives the longest:",
+            "options": [
+                ["Chihuahua", false],
+                ["toy poodle", false],
+                ["jack russell terrier", false],
+                ["cockapoo", false],
+                ["new guinea singing doge", true]
+            ]
+        }
+    ]
+}
