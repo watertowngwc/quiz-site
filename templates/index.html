@@ -7,6 +7,8 @@
         <ul>
             {% for id, name in quiz_names %}
                 <li><a href="{{url_for('quiz', id=id)}}">{{name}}</a></li>
+                <br>
+                <br>
             {% endfor %}
         </ul>
     </div>
