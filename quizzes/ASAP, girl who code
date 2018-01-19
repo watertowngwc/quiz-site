@@ -1,0 +1,35 @@
+{
+    "name": "FISH QUIZ.",
+    "description": "How much do you know about these fish?",
+    "questions": [
+        {
+            "text": "what is the ugliest fish",
+            "options": [
+                ["Cleaner wrasse fish", false],
+                ["Stargazer fish", true],
+                ["Clown fish", false],
+                ["Elephant fish", false]
+            ]
+        },
+        {
+            "text": "which one of the options of fish glow",
+            "options": [
+                ["Swordtail fish", false],
+                ["Cherry Barb fish", false],
+                ["Guppy fish", false],
+                ["Porcupine fish", false],
+                ["Black Dragonfish", true]
+            ]
+        },
+        {
+
+            "text": "what is the most popular fish to EATTTTTTTTT",
+            "options": [
+                ["Tuna", false],
+                ["Flounder", false],
+                ["Salmon", true],
+                ["Pollock", false]
+            ]
+        }
+    ]
+}
