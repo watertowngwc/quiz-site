@@ -25,7 +25,7 @@
             "text": "Which one of these companies was NOT started by a woman?",
             "options": [
                 ["23andme", false],
-                ["Lyft", false],
+                ["Lyft", true],
                 ["Eventbrite", false],
                 ["Code for America", false]
             ]
