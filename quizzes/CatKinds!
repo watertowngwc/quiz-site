@@ -1,0 +1,49 @@
+{
+    "name": "MOst popular Cats",
+    "description": "How much do you know about these leading ladies?",
+    "questions": [
+        {
+            "text": "What is the most popular and cutest cat in the world?",
+            "options": [
+                ["Shallow", true],
+                ["American short haired", false],
+                ["Beagle", false],
+                ["Shetlan", false]
+            ]
+        },
+        {
+            "text": "Who is the most famous cat in the WORLD?!!",
+            "options": [
+                ["Some random stray", false],
+                ["A dog", false],
+                ["Shallow!!!!!", true],
+                ["Hippo", false],
+                ["Petco cat", false]
+            ]
+        },
+        {
+            "text": "What is the most owned cat in the world",
+            "options": [
+                ["Maine Coon Cat", false],
+                ["American shorthair Cat", true],
+                ["German shephard", false]
+            ]
+        },
+        {
+            "text": "What is the best dog in the WORLD",
+            "options": [
+                ["Beagle", true],
+                ["French bull dog", false],
+                ["Pug", true],
+                ["Huskie", true]
+            ]
+        },
+        {
+            "text": "When something is hard, it's best to:",
+            "options": [
+                ["Keep trying", true],
+                ["Not keep trying", false]
+            ]
+        }
+    ]
+}
