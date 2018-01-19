@@ -1,0 +1,51 @@
+{
+    "name": "Disney Movies",
+    "description": "Can you guess the Disney movie based on its iconic quote?",
+    "questions": [
+        {
+            "text": "If you cant say something nice, dont say nothing at all.",
+            "options": [
+                ["Bambi", true],
+                ["Alice in Wonderland", false],
+                ["Peter Pan", false],
+                ["Cinderella", false]
+            ]
+        },
+        {
+            "text": "The flower that blooms in adversity is the most rare and beautiful of them all.",
+            "options": [
+                ["Sleeping Beauty", false],
+                ["Moana", false],
+                ["Tangled", false],
+                ["Pocahontas", false],
+                ["Mulan", true]
+            ]
+        },
+        {
+            "text": "Youre braver than you believe, and stronger than you seem, and smarter than you think.",
+            "options": [
+                ["Frozen", false],
+                ["Winnie the Pooh", true],
+                ["Brave", false],
+                ["The Artistocats", false]
+            ]
+        },
+        {
+            "text": "The human world is a mess.",
+            "options": [
+                ["The Lion King", false],
+                ["The Little Mermaid", true],
+                ["The Incredibles", false]
+            ]
+        },
+        {
+            "text": "Life isnt some cartoon musical where you sing a little song and all your insipid dreams magically come true. So let it go.",
+            "options": [
+                ["The Princess and the Frog", false],
+                ["Dumbo", false],
+                ["Zootopia", true],
+                ["Aladdin", false]
+            ]
+        }
+    ]
+}
