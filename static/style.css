@@ -16,3 +16,13 @@
     font-weight: bold;
     text-align: center;
 }
+
+#category {
+    display: block;
+    padding: 10px;
+    background-color: #2A4360;
+    color: #737F8E;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
