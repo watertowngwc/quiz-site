@@ -1,0 +1,51 @@
+{
+    "name": "Math",
+    "description": "Do math",
+    "questions": [
+        {
+            "text": "1+1",
+            "options": [
+                ["2", true],
+                ["4", false],
+                ["11", false],
+                ["window", false]
+            ]
+        },
+        {
+            "text": "4x5",
+            "options": [
+                ["45", false],
+                ["341", false],
+                ["0", false],
+                ["20", true]
+            ]
+        },
+        {
+            "text": "32-4",
+            "options": [
+                ["324", false],
+                ["28", true],
+                ["47", false],
+                ["78", false]
+            ]
+        },
+        {
+            "text": "2^3",
+            "options": [
+                ["23", false],
+                ["8", true],
+                ["4", false],
+                ["29", false]
+            ]
+        },
+        {
+            "text": "(8)3.4 - 32/4 + 2^5",
+            "options": [
+                ["51.2", true],
+                ["-6337", false],
+                ["8", false],
+                ["928358", false]
+            ]
+        }
+    ]
+}
