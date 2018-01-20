@@ -17,17 +17,17 @@
                 ["New York", false],
                 ["Dallas", false],
                 ["Houston", false],
-                ["Oklahoma", false]
-                ["Cambridge", true],
+                ["Oklahoma", false],
+                ["Cambridge", true]
             ]
         },
         {
             "text": "Which one of these companies was NOT started by a woman?",
             "options": [
                 ["23andme", false],
-                ["Lyft", false],
-                ["Eventbrite", false]
-                ["Code for America", false],
+                ["Lyft", true],
+                ["Eventbrite", false],
+                ["Code for America", false]
             ]
         },
         {
