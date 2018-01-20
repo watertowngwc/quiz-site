@@ -1,0 +1,48 @@
+{
+    "name": "Harry Potter Quiz",
+    "description": "Test your wizarding world wisdom!",
+    "questions": [
+        {
+            "text": "Where did Harry Potter go to school?",
+            "options": [
+                ["Hogwarts", true],
+                ["Ilvermorny", false],
+                ["Castelobruxo", false],
+                ["Beauxbatons", false]
+            ]
+        },
+        {
+            "text": "How many types of fouls are there in Quidditch?",
+            "options": [
+                ["50", false],
+                ["365.75", false],
+                ["2,000", false],
+                ["6.0221409 x 10^23", false],
+                ["700", true]
+            ]
+        },
+        {
+            "text": "How old was Dumbledore when he died?",
+            "options": [
+                ["1,000", false],
+                ["150", true],
+                ["82 and 7 months", false],
+                ["63", false]
+            ]
+        },
+        {
+            "text": "Were the plants made up?",
+            "options": [
+                ["Obviously, there is no such thing as a screaming baby plant. JK Rowling must have a very good imagination", false],
+                ["Actually, they were documented in a 17th-century English book by Nicholas Culpeper, called Culpeper's Complete Herbal", true]
+            ]
+        },
+        {
+            "text": "Is platform 9 3/4 the only wizarding train station?",
+            "options": [
+                ["No! There is also platform 7.5!", true],
+                ["Yes. They would have mentioned it, wouldn't they?", false]
+            ]
+        }
+    ]
+}

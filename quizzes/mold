@@ -1,0 +1,22 @@
+{
+    "name": "Mold",
+    "description": "How much do you know about MOLD??!?",
+    "questions": [
+        {
+            "text": "Mold is alive",
+            "options": [
+                ["Yes", true],
+                ["No", false]
+            ]
+        },
+        {
+            "text": "Mold is a...",
+            "options": [
+                ["Vegetable", false],
+                ["Fungus", true],
+                ["Animal", false],
+                ["Bacteria", false]
+            ]
+        }
+    ]
+}
