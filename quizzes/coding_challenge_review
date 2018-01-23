@@ -1,0 +1,69 @@
+{
+    "name": "Coding Challenge: The Quiz",
+    "description": "See if you can figure out what these code snippets will print!",
+    "questions": [
+        {
+            "text": "Question 1<br><code>print('Hello!')</code>",
+            "options": [
+                ["<code>Hello</code>", false],
+                ["<code>Hello!</code>", true],
+                ["<code>hello</code>", false],
+                ["<code>Good bye</code>", false]
+            ]
+        },
+        {
+            "text": "Question 2<br><code>x = 2<br>y = 3<br>z = x+y<br>print(z)</code>",
+            "options": [
+                ["<code>3</code>", false],
+                ["<code>2</code>", false],
+                ["<code>5</code>", true],
+                ["<code>23</code>", false]
+            ]
+        },
+        {
+            "text": "Question 3<br><code>x = 2<br>y = 3<br>z = x+y<br>print(x)</code>",
+            "options": [
+                ["<code>3</code>", false],
+                ["<code>2</code>", true],
+                ["<code>5</code>", false],
+                ["<code>23</code>", false]
+            ]
+        },
+        {
+            "text": "Question 4<br><code>cat = 'fluffy'<br>cat = 'purr'<br>cat = 'meow'<br>print(cat)</code>",
+            "options": [
+                ["<code>fluffy</code>", false],
+                ["<code>fluffy purr meow</code>", false],
+                ["<code>meow</code>", true],
+                ["<code>woof</code>", false]
+            ]
+        },
+        {
+            "text": "Question 5<br><code>bread_types=['white', 'whole wheat', 'french', 'baguette']<br>for b in bread_types:<br>&nbsp;&nbsp;print('Do you want {} bread?'.format(b))</code>",
+            "options": [
+                ["<code>Do you want {} bread?</code>", false],
+                ["<code>Do you want white bread?</code>", false],
+                ["<code>Do you want white whole wheat french baguette bread?</code>", false],
+                ["<code>Do you want white bread?<br>Do you want whole wheat bread?<br>Do you want french bread?<br>Do you want baguette bread?<br></code>", true]
+            ]
+        },
+        {
+            "text": "Question 6<br><code>def greet(name):<br>&nbsp;&nbsp;print('Good evening, {}!'.format(name))<br>greet('Betsy')<br>greet('Sebastian')<br></code>",
+            "options": [
+                ["<code>Good evening Betsy!<br>Good evening Sebastian!</code>", true],
+                ["<code>Good evening!</code>", false],
+                ["<code>Good evening Betsy!</code>", false],
+                ["<code>Good evening Betsy! Good evening Sebastian!</code>", true]
+            ]
+        },
+        {
+            "text": "Question 7<br><code>def tell_me_about_my_bear(bear):<br>&nbsp;&nbsp;if bear == 'panda':<br>&nbsp;&nbsp;&nbsp;&nbsp;print('Nice bear!')<br>&nbsp;&nbsp;elif bear == 'grizzly' or bear == 'polar':<br>&nbsp;&nbsp;&nbsp;&nbsp;print('Scary bear')<br><br>my_bears = ['black', 'panda', 'polar', 'brown', 'Grizzly']<br>for b in my_bears:<br>&nbsp;&nbsp;tell_me_about_my_bear(b)</code>",
+            "options": [
+                ["<code>Scary bear<br>Nice bear!<br>Scary bear<br>Scary bear<br>Scary bear</code>", false],
+                ["<code>Scary bear<br>Nice bear!<br>Scary bear<br>Scary bear</code>", false],
+                ["<code>Nice bear!<br>Scary bear<br>Scary bear</code>", false],
+                ["<code>Nice bear!<br>Scary bear</code>", true]
+            ]
+        }
+    ]
+}
