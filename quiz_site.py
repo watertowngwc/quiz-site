@@ -3,6 +3,7 @@ import flask
 import json
 import os
 import random
+import search
 
 app = flask.Flask(__name__)
 quiz_dir = 'quizzes'
@@ -15,6 +16,11 @@ for quiz in os.listdir(quiz_dir):
 @app.route('/')
 def index():
     return flask.render_template('index.html', quiz_names=zip(quizzes.keys(), map(lambda q: q['name'], quizzes.values())))
+
+
+@app.route('/tags')
+def tags():
+    return flask.render_template('tags.html', categories=search.sites)
 
 @app.route('/quiz/<id>')
 def quiz(id):
@@ -67,3 +73,4 @@ def check_quiz(id):
 
 if __name__ == '__main__':
     app.run(debug=True)#, host='0.0.0.0', port=5000)
+

@@ -3,7 +3,10 @@
 {% block body %}
     <div id='content'>
         <span id='title'>Quiz-O-Rama</span>
-        <span id="category">All Quizzes</span>
+        <span id="category" style="font-size:160%">All Quizzes</span>
+        <form>
+            <input type="text" name="search" placeholder="Search..">
+        </form>
         <ul>
             {% for id, name in quiz_names %}
                 <li><a href="{{url_for('quiz', id=id)}}">{{name}}</a></li>
