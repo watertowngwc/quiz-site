@@ -13,9 +13,13 @@ for quiz in os.listdir(quiz_dir):
     print('Loading {}'.format(quiz))
     quizzes[quiz] = json.loads(open(os.path.join(quiz_dir, quiz)).read())
 
-@app.route('/')
+@app.route('/about')
 def index():
-    return flask.render_template('index.html', quiz_names=zip(quizzes.keys(), map(lambda q: q['name'], quizzes.values())))
+    return flask.render_template('about.html', quiz_names=zip(quizzes.keys(), map(lambda q: q['name'], quizzes.values())))
+
+@app.route('/about')
+def about():
+    return flask.render_template('about.html',)
 
 
 @app.route('/tags')
@@ -32,6 +36,14 @@ def quiz(id):
     # ordering = list(map(lambda t: t[0], questions))
 
     return flask.render_template('quiz.html', id=id, quiz=quiz)
+
+@app.route('/about')
+def about():
+    return flask.render_template('about.html')
+
+@app.route('/fun')
+def fun():
+    return flask.render_template('fun.html')
 
 @app.route('/check_quiz/<id>', methods=['POST'])
 def check_quiz(id):
