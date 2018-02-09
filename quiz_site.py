@@ -27,6 +27,14 @@ def quiz(id):
 
     return flask.render_template('quiz.html', id=id, quiz=quiz)
 
+@app.route('/about')
+def about():
+    return flask.render_template('about.html')
+
+@app.route('/fun')
+def fun():
+    return flask.render_template('fun.html')
+
 @app.route('/check_quiz/<id>', methods=['POST'])
 def check_quiz(id):
     quiz = copy.deepcopy(quizzes[id])
