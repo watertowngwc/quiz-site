@@ -16,6 +16,10 @@ for quiz in os.listdir(quiz_dir):
 def index():
     return flask.render_template('index.html', quiz_names=zip(quizzes.keys(), map(lambda q: q['name'], quizzes.values())))
 
+@app.route('/about')
+def about():
+    return flask.render_template('about.html',)
+
 @app.route('/quiz/<id>')
 def quiz(id):
     if id not in quizzes:
