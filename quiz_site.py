@@ -12,9 +12,9 @@ for quiz in os.listdir(quiz_dir):
     print('Loading {}'.format(quiz))
     quizzes[quiz] = json.loads(open(os.path.join(quiz_dir, quiz)).read())
 
-@app.route('/')
+@app.route('/about')
 def index():
-    return flask.render_template('index.html', quiz_names=zip(quizzes.keys(), map(lambda q: q['name'], quizzes.values())))
+    return flask.render_template('about.html', quiz_names=zip(quizzes.keys(), map(lambda q: q['name'], quizzes.values())))
 
 @app.route('/quiz/<id>')
 def quiz(id):
