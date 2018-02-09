@@ -11,10 +11,6 @@
         <span id="category2"><a href="http://127.0.0.1:5000/fun">No</a></span>
         <br>
         <span id="text"><br>Every quiz ever on this site. Have fun scrolling!</span>
-        <form>
-            <br>
-            <input type="text" name="search" placeholder="Search...">
-        </form>
         <ul>
             {% for id, name in quiz_names %}
                 <li><a href="{{url_for('quiz', id=id)}}">{{name}}</a></li>
