@@ -2,22 +2,22 @@
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #edabf4;
+    background-color: #abf2eb;
     padding: 15px;
-    font-family: 'pacifico', arial;
-    color: #8c00ff;
+    font-family: helvetica, arial;
+    color: #ff0098;
 }s
 
 #title {
     display: block;
     padding: 5px;
-    background-color: #000000;
-    color: #000000;
-    font-size: 100px
+    background-color: #ff0098;
+    color: #ff0098;
+    font-size: 100px;
     font-weight: bold;
     text-align: center;
-    font-family: 'Pacifico', cursive;
+    font-family: helvetica, arial;
 }
 a:link {
-    color: #e6e6e6;
+    color: #ff0098;
 }
