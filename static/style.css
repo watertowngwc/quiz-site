@@ -4,19 +4,18 @@
     margin-right: auto;
     background-color: #abf2eb;
     padding: 15px;
-    font-family: Comic Sans MS, Comic Sans MS;
+    font-family: 'Comic Sans MS', arial;
     color: #ff0098;
-}s
+}
 
 #title {
     display: block;
     padding: 5px;
     background-color: #ff0098;
-    color: #ff0098;
+    color: #000000;
     font-size: 100pt;
     font-weight: bold;
     text-align: center;
-    font-family: Comic Sans MS, Comic Sans MS;
     font-family: 'Impact', cursive;
 }
 a:link {
