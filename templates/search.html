@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %} Quiz-O-Rama {% endblock %}
+{% block body %}
+    <div id='content'>
+        <span id='title'>Search Results</span>
+        <br>
+        <span id="category" style="font-size:160%">Search Results</span>
+       <form method = "post" action = "/search">
+            <input type="text" name="search" placeholder="Search...">
+       </form>
+        <br>
+        <span id="text"><br>Here are all the quizzes that match your search.</span>
+        <ul>
+            {% for id, name in quiz_names.items() %}
+                <li><a href="{{url_for('quiz', id=id)}}">{{name}}</a></li>
+                <br>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}

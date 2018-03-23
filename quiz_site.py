@@ -51,6 +51,18 @@ def quiz(id):
 def fun():
     return flask.render_template('fun.html')
 
+@app.route("/search", methods=['POST'])
+def search():
+    print(flask.request.form["search"])
+    all_quizzes = dict (zip(quizzes.keys(), map(lambda q: q['name'], quizzes.values())))
+    print(all_quizzes)
+    print(type(all_quizzes))
+    search_results = {}
+    for idno in all_quizzes:
+        if flask.request.form["search"].lower() in all_quizzes[idno].lower():
+            search_results[idno] = all_quizzes[idno]
+            print(search_results)
+    return flask.render_template('search.html',quiz_names=search_results)
 @app.route('/check_quiz/<id>', methods=['POST'])
 def check_quiz(id):
     quiz = copy.deepcopy(quizzes[id])
