@@ -17,14 +17,10 @@
         </form>
         <span id="category1"><a href="{{url_for('about')}}">About Us</a></span>
         <br>
-        <span id="category2"><a href="http://127.0.0.1:5000/fun">No</a></span>
-        <form>
-            <input type="text" name="search" placeholder="Search..">
-        </form>
+        <span id="category2"><a href="{{url_for('fun')}}">No</a></span>
         <form method="post" action="/change_style">
             <input type="submit" value="Color Toggle">
         </form>
-        <span id="category2"><a href="{{url_for('fun')}}">No</a></span>
         <br>
         <span id="text"><br>Every quiz that has ever been made on this site. Have fun scrolling!</span>
         <ul>
