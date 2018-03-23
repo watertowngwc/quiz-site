@@ -13,14 +13,24 @@ for quiz in os.listdir(quiz_dir):
     print('Loading {}'.format(quiz))
     quizzes[quiz] = json.loads(open(os.path.join(quiz_dir, quiz)).read())
 
+style_button = json.loads(open(os.path.join('config', 'config.json')).read())
+
 @app.route('/')
 def index():
-    return flask.render_template('index.html', quiz_names=zip(quizzes.keys(), map(lambda q: q['name'], quizzes.values())))
+    return flask.render_template('index.html', quiz_names=zip(quizzes.keys(), map(lambda q: q['name'], quizzes.values())), style_button=style_button)
 
 @app.route('/about')
 def about():
     return flask.render_template('about.html',)
 
+@app.route('/change_style', methods=['POST'])
+def change_style():
+    global style_button
+    if style_button == True:
+        style_button = False
+    else:
+        style_button = True
+    return flask.redirect(flask.url_for('index'))
 
 @app.route('/tags')
 def tags():

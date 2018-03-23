@@ -1,17 +1,27 @@
 {% extends "base.html" %}
+{% block css %}
+{% if style_button %}
+    <link rel=stylesheet type=text/css href="{{url_for('static', filename='style2.css')}}" />
+{% else %}
+    <link rel=stylesheet type=text/css href="{{url_for('static', filename='style.css')}}" />
+{% endif %}
+{% endblock %}
 {% block title %} Quiz-O-Rama {% endblock %}
 {% block body %}
     <div id='content'>
         <span id='title'>Quiz-O-Rama</span>
         <br>
         <span id="category" style="font-size:160%">All Quizzes</span>
-        <form>
-            <input type="text" name="search" placeholder="Search..">
-        </form>
+        <br>
         <span id="category1"><a href="http://127.0.0.1:5000/about">About Us</a></span>
         <br>
         <span id="category2"><a href="http://127.0.0.1:5000/fun">No</a></span>
-        <br>
+        <form>
+            <input type="text" name="search" placeholder="Search..">
+        </form>
+        <form method="post" action="/change_style">
+            <input type="submit" value="Color Toggle">
+        </form>
         <span id="text"><br>Every quiz that has ever been made on this site. Have fun scrolling!</span>
         <ul>
             {% for id, name in quiz_names %}
