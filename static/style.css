@@ -4,8 +4,8 @@
     margin-right: auto;
     background-color: #7107fc;
     padding: 15px;
-    font-family: 'Times New Roman', arial;
-    color: #ff0098;
+    font-family: 'Comic Sans MS', arial;
+    color: #000000;
 }
 
 #title {
@@ -19,12 +19,12 @@
     font-family: 'Impact', cursive;
 }
 a:link {
-    color: #00cc6c;
+    color: #ff0098;
 }
 
 body {
     background-color:rgb(0,0,0);
-    background-image:url(http://www.zingerbugimages.com/backgrounds/purple_stars.gif);
+    background-image:url(https://media.giphy.com/media/l4hLPzGuhO9FYXQd2/giphy.gif);
     background-position:top left;
     background-repeat:repeat;
     background-attachment:fixed;

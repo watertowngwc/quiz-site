@@ -19,6 +19,11 @@ style_button = json.loads(open(os.path.join('config', 'config.json')).read())
 def index():
     return flask.render_template('index.html', quiz_names=zip(quizzes.keys(), map(lambda q: q['name'], quizzes.values())), style_button=style_button)
 
+@app.route('/highscore')
+def highscore():
+    scoreboard= [["Maeve",235634],["Rebecca", 784356789]]
+    return flask.render_template('highscore.html',scoreboard=scoreboard)
+
 @app.route('/about')
 def about():
     return flask.render_template('about.html',)
