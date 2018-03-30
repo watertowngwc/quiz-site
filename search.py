@@ -25,7 +25,7 @@ sites = {
         'Harry Potter Quiz',
         'Women Who Code',
     ],
-    'books': [
+    'movies': [
         'Harry Potter Quiz'
     ],
     'history': [
