@@ -2,24 +2,24 @@
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #abf2eb;
+    background-color: #7FFFD4;
     padding: 15px;
-    font-family: 'Comic Sans MS', arial;
-    color: #ff0098;
+    font-family: 'Comic Sans MS';
+    color: #FF1493;
 }
 
 #title {
     display: block;
     padding: 5px;
-    background-color: #ff0098;
+    background-color: #FF1493;
     color: #000000;
     font-size: 100pt;
     font-weight: bold;
     text-align: center;
-    font-family: 'Impact', cursive;
+    font-family: 'Impact';
 }
 a:link {
-    color: #ff0098;
+    color: #FF1493;
 }
 
 body {
