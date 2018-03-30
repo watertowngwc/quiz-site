@@ -6,7 +6,7 @@
         .question-correct:after {
             content: "✓";
             font-size: 30px;
-            color: navy;
+            color: green;
             padding-left: 10px;
         }
 
@@ -24,7 +24,7 @@
         <div>
             <h4 {% if choice[1] %} class="question-correct" {% else %} class="question-incorrect" {% endif %}>{{question['text']|safe}}</h4>
             {% for answer in question['options'] %}
-                <p {% if answer[1] %} class="question-correct" {% elif not answer[1] %} class="question-incorrect" {% endif %}>
+                <p {% if answer[1] %} class="question-correct"  {% endif %}>
                     {{answer[0]|safe}} {% if answer == choice %} - <strong> Chosen </strong> {% endif %}
                 </p>
             {% endfor %}
