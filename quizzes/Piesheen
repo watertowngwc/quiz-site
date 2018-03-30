@@ -1,5 +1,5 @@
 {
-    "name": "Pusheen",
+    "name": "Piesheen",
     "description": "How much do you know about Pusheen?",
     "questions": [
         {
@@ -20,9 +20,43 @@
                 ["1", false],
                 ["87 BC", false]
             ]
+        },
+        {
+
+            "text": "What is Piesheen a combonation of?:",
+            "options": [
+                ["Raspberry Pie and Pusheen", true],
+                ["Pie and Pusheen", false],
+                ["Some items in the universe that are completely made up", false],
+                ["12 and 7", false],
+                ["Pumkin pie and Pusheen", false]
+            ]
+        },
+
+          {
+
+            "text": "What is the worlds favorite picture of Pusheen?:",
+            "options": [
+                ["Normal Pusheen", true],
+                ["Taco Pusheen", true],
+                ["Drawing Pusheen", true],
+                ["12 and 7", false],
+                ["Pumkin pie and Pusheen", true]
+            ]
+        },
+
+         {
+
+            "text": "What is the worlds favorite picture of Pusheen?:",
+            "options": [
+                ["Normal Pusheen", true],
+                ["Taco Pusheen", false],
+                ["Drawing Pusheen", false],
+                ["12 and 7", false],
+                ["Pumkin pie and Pusheen", false]
+            ]
         }
-
-
-
     ]
 }
+
+
