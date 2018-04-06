@@ -8,7 +8,7 @@
             <p>
                 <h4>{{question['text']|safe}}</h4>
                 {% for answer in question['options'] %}
-                    <p><label><input type="radio" name="{{outer_loop.index0}}" value="{{loop.index0}}" /> {{answer[0]|safe}}</label></p>
+                    <p><label><input type="checkbox" name="{{outer_loop.index0}}" value="{{loop.index0}}" /> {{answer[0]|safe}}</label></p>
                 {% endfor %}
             </p>
         {% endfor %}

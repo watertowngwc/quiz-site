@@ -1,0 +1,53 @@
+{
+    "name": "FOOD!",
+    "description": "How much do you know about food?",
+    "questions": [
+        {
+            "text": "Which one is a fruit?",
+            "options": [
+                ["ice cream", false],
+                ["pineapple", true],
+                ["chips", false],
+                ["pizza", false]
+            ]
+        },
+        {
+            "text": "Which one is a vegetable?",
+            "options": [
+                ["cake", false],
+                ["pie", false],
+                ["brocoli", true],
+                ["cake pops", false],
+                ["cookies", false]
+            ]
+        },
+        {
+            "text": "Which one is a protein? (could be more than 1)",
+            "options": [
+                ["carrot", false],
+                ["steak", true],
+                ["chicken", false],
+                ["brussel sprouts", false],
+                ["eggs", true]
+            ]
+        },
+        {
+            "text": "Which one is a dairy?(could be more than 1)",
+            "options": [
+                ["milk", true],
+                ["ice cream", true],
+                ["cheese", true],
+                ["yogurt", true]
+            ]
+        },
+        {
+            "text": "What's the best food on Earth?(in my opinion):",
+            "options": [
+                ["pizza", false],
+                ["cookies", false],
+                ["sushi", true]
+
+            ]
+        }
+    ]
+}

@@ -68,6 +68,7 @@ def search():
             search_results[idno] = all_quizzes[idno]
             print(search_results)
     return flask.render_template('search.html',quiz_names=search_results)
+
 @app.route('/check_quiz/<id>', methods=['POST'])
 def check_quiz(id):
     quiz = copy.deepcopy(quizzes[id])
