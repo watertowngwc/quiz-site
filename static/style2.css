@@ -2,28 +2,29 @@
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #FFFFFF;
+    background-color: #303333;
     padding: 15px;
-    font-family: 'Comic Sans MS';
-    color: #000000;
+    font-family: 'Helvetica';
+    color: #FFFFFF;
 }
 
 #title {
     display: block;
     padding: 5px;
-    background-color: #008989;
-    color: #000000;
+    background-color: #303333;
+    color: #FFFFFF;
     font-size: 100pt;
     font-weight: bold;
     text-align: center;
     font-family: 'Impact';
 }
 a:link {
-    color: #000000;
+    color: #FFFFFF;
+    text-decoration: underline;
 }
 
 body {
-    background-color: #000000;
+    background-color: #303333;
     background-position:top left;
     background-repeat:repeat;
     background-attachment:fixed;
