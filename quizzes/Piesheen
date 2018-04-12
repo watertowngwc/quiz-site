@@ -5,9 +5,9 @@
         {
             "text": "Who is Pusheen?",
             "options": [
+                ["normal cat", false],
                 ["A very interesting cat dog who loves blogging", false],
-                ["Normal cat", false],
-                ["The most interesting cat on Earth who also loves blogging", true],
+                ["Most interesting cat on Earth who also loves blogging", true],
                 ["Dog", false]
             ]
         },
