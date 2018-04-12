@@ -1,0 +1,31 @@
+#content {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #303333;
+    padding: 15px;
+    font-family: 'Helvetica';
+    color: #FFFFFF;
+}
+
+#title {
+    display: block;
+    padding: 5px;
+    background-color: #303333;
+    color: #FFEF3D;
+    font-size: 100pt;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Henny Penny';
+}
+a:link {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+body {
+    background-color: #303333;
+    background-position:top left;
+    background-repeat:repeat;
+    background-attachment:fixed;
+}

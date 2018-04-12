@@ -1,6 +1,7 @@
 {
     "name": "Harry Potter Quiz",
     "description": "Test your wizarding world wisdom!",
+    "style_name": "stylehp",
     "questions": [
         {
             "text": "Where did Harry Potter go to school?",
@@ -31,7 +32,7 @@
             ]
         },
         {
-            "text": "Were the plants made up?",
+            "text": "Were all the Herbology plants made up?",
             "options": [
                 ["Obviously, there is no such thing as a screaming baby plant. JK Rowling must have a very good imagination", false],
                 ["Actually, they were documented in a 17th-century English book by Nicholas Culpeper, called Culpeper's Complete Herbal", true]
