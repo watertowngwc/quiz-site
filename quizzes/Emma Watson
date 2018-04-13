@@ -1,0 +1,55 @@
+{
+    "name": "Emma Watson",
+    "description": "How much do you know about the legendary Emma Watson?",
+    "questions": [
+        {
+            "text": "When was Emma Watson born?",
+            "options": [
+                ["January 13, 1995", false],
+                ["May 12, 1985", false],
+                ["April 15, 1990", true],
+                ["March 4, 2018", false]
+            ]
+        },
+        {
+            "text": "How old was Emma Watson when she first auditioned for the role of Hermione?",
+            "options": [
+                ["15", false],
+                ["15", false],
+                ["6", false],
+                ["9", true],
+                ["13", false],
+                ["11", false]
+            ]
+        },
+        {
+            "text": "How many movies has she been in?",
+            "options": [
+                ["at least 10", false],
+                ["at least 21", true],
+                ["at least 5", false],
+                ["0", false]
+
+            ]
+        },
+        {
+            "text": "How many siblings does she have?",
+            "options": [
+                ["0", false],
+                ["1", false],
+                ["3", false],
+                ["4", true]
+            ]
+        },
+        {
+            "text": "Where was she born?",
+            "options": [
+                ["Rome, Italy", false],
+                ["USA", false],
+                ["Paris, France", true],
+                ["England", false]
+
+            ]
+        }
+    ]
+}

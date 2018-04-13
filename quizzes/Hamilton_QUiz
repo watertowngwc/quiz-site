@@ -1,0 +1,48 @@
+{
+    "name": "How much do you know about Hamilton(the musical and the person)",
+
+    "questions": [
+        {
+            "text": "Who is the musical director for the New York version of Hamilton",
+            "options": [0
+                ["Alex Lacamoire ", true],
+                ["Lin Manuel-Miranda", false],
+                ["Andrew Lloyd Webber", false],
+                ["Oscar Hammerstein", false]
+            ]
+        },
+        {
+            "text": "What year did Eliza Hamilton die?:",
+            "options": [
+                ["1875", false],
+                ["1900", false],
+                ["1852", false],
+                ["1856", false],
+                ["1854", true]
+            ]
+        },
+        {
+            "text": "Which theater does Hamilton show at in Chicago?",
+            "options": [
+                ["Richard Rodgers THeather", false],
+                ["CIBC Theater", true],
+                ["Victoria Palace Theatre", false],
+                ["Orpheum Theater", false]
+            ]
+        },
+        {
+            "text": "Hamilton is not going to be on the $10 bill after 2024",
+            "options": [
+                ["True", false],
+                ["False", true]
+            ]
+        },
+        {
+            "text": "The subtitle of Hamilton is:",
+            "options": [
+                ["an american musical", true],
+                ["the story of the unlikely founding father", false]
+            ]
+        }
+    ]
+}
