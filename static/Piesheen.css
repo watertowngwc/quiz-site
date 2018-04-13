@@ -2,29 +2,29 @@
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #303333;
+    background-color: #76ebf3;
     padding: 15px;
-    font-family: 'Georgia';
-    color: #FFFFFF;
+    font-family: 'Comic Sans MS';
+    color: #000000;
 }
 
 #title {
     display: block;
     padding: 5px;
-    background-color: #303333;
-    color: #FFFFFF;
+    background-color: #ac50b2;
+    color: #000000;
     font-size: 100pt;
     font-weight: bold;
     text-align: center;
-    font-family: 'Impact';
+    font-family: 'Berkshire Swash';
 }
 a:link {
-    color: #FFFFFF;
-    text-decoration: underline;
+    color: #FF1493;
 }
 
 body {
-    background-color: #303333;
+    background-color: #6aa3ff;
+    background-image:url(https://media.giphy.com/media/l4hLPzGuhO9FYXQd2/giphy.gif);
     background-position:top left;
     background-repeat:repeat;
     background-attachment:fixed;

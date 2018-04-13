@@ -1,13 +1,14 @@
 {
     "name": "Piesheen",
     "description": "How much do you know about Pusheen?",
+    "style_name": "Piesheen",
     "questions": [
         {
             "text": "Who is Pusheen?",
             "options": [
+                ["normal cat", false],
                 ["A very interesting cat dog who loves blogging", false],
-                ["Normal cat", false],
-                ["The most interesting cat on Earth who also loves blogging", true],
+                ["Most interesting cat on Earth who also loves blogging", true],
                 ["Dog", false]
             ]
         },
@@ -18,7 +19,7 @@
                 ["1237", false],
                 ["5th cenrty BC", true],
                 ["1", false],
-                ["87 BC", false]
+                ["87th cenrty BC", false]
             ]
         },
         {
