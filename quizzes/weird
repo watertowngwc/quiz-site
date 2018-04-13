@@ -1,0 +1,52 @@
+{
+    "name": "Weird Facts!",
+    "description": "How well do you know these weird facts?",
+    "style_name": "weirder",
+    "questions": [
+        {
+            "text": "What was the first planet to be discovered by a telescope?",
+            "options": [
+                ["Uranus", true],
+                ["Jupiter", false],
+                ["Mercury", false],
+                ["Earth", false]
+            ]
+        },
+        {
+            "text": "What is the world's biggest island?",
+            "options":[
+                ["Hawaii", false],
+                ["Greenland", true],
+                ["Ireland!", false],
+                ["Great Britan", false]
+            ]
+        },
+        {
+            "text": "In Connecticut, what must a pickle do to be legal?",
+            "options": [
+                ["Roll", false],
+                ["Bounce", true],
+                ["Be green", false],
+                ["Be a solid", false]
+            ]
+        },
+        {
+            "text": "What can 33% of the world not do?",
+            "options": [
+                ["Roll their tongues", false],
+                ["Make a vulcan sign", false],
+                ["Do a handstand", false],
+                ["Snap their fingers", true]
+            ]
+        },
+        {
+            "text": "What is it illegal to name your child in Equatorial Guinea?",
+            "options": [
+                ["James", false],
+                ["Maria", false],
+                ["Monica", true],
+                ["Thomas", false]
+            ]
+        }
+    ]
+}
