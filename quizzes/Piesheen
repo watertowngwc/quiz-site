@@ -1,6 +1,7 @@
 {
     "name": "Piesheen",
     "description": "How much do you know about Pusheen?",
+    "style_name": "Piesheen",
     "questions": [
         {
             "text": "Who is Pusheen?",
@@ -18,7 +19,7 @@
                 ["1237", false],
                 ["5th cenrty BC", true],
                 ["1", false],
-                ["87 BC", false]
+                ["87th cenrty BC", false]
             ]
         },
         {
