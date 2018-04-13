@@ -1,6 +1,7 @@
 {
     "name": "Weird Facts!",
     "description": "How well do you know these weird facts?",
+    "style_name": "weirder",
     "questions": [
         {
             "text": "What was the first planet to be discovered by a telescope?",

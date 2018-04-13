@@ -2,21 +2,21 @@
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #fff45b;
+    background-color: #ff54e8;
     padding: 15px;
-    font-family: 'Bookman';
-    color: #3d3dff;
+    font-family: 'Times';
+    color: #0015ff;
 }
 
 #title {
     display: block;
     padding: 5px;
-    background-color: #c8ffc1;
-    color: #000000;
+    background-color: #50007f;
+    color: #ffe100;
     font-size: 100pt;
     font-weight: bold;
     text-align: center;
-    font-family: 'Berkshire Swash';
+    font-family: 'Impact';
 }
 a:link {
     color: #FF1493;
