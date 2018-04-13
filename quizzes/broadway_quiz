@@ -1,6 +1,7 @@
 {
     "name": "Broadway!",
     "description": "How much do you know about the theatre?",
+    "style_name": "yellow",
     "questions": [
         {
             "text": "Which groundbreaking musical about mental illness and friendship won a total of six Tonys in 2017?",

@@ -1,6 +1,7 @@
 {
     "name": "dog breeds",
     "description": "How much do you know about dog breeds?",
+   "style_name": "Goldenrod",
     "questions": [
         {
             "text": "what is Americas most popular dog breed",
