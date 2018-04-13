@@ -12,18 +12,18 @@ quizzes = {}
 for quiz in os.listdir(quiz_dir):
     print('Loading {}'.format(quiz))
     quizzes[quiz] = json.loads(open(os.path.join(quiz_dir, quiz)).read())
-
+# no
 style_button = json.loads(open(os.path.join('config', 'config.json')).read())
 
 @app.route('/')
 def index():
     return flask.render_template('index.html', quiz_names=zip(quizzes.keys(), map(lambda q: q['name'], quizzes.values())), style_button=style_button)
-
+# no
 @app.route('/highscore')
 def highscore():
-    scoreboard= [["Maeve",235634],["Rebecca", 784356789]]
+    scoreboard= [["Maeve",235634],["Rebecca", 784356789]]# no
     return flask.render_template('highscore.html',scoreboard=scoreboard)
-
+# no
 @app.route('/about')
 def about():
     return flask.render_template('about.html',)
@@ -33,6 +33,7 @@ def change_style():
     global style_button
     if style_button == True:
         style_button = False
+        # no
     else:
         style_button = True
     return flask.redirect(flask.url_for('index'))
@@ -60,7 +61,7 @@ def fun():
 def search():
     print(flask.request.form["search"])
     all_quizzes = dict (zip(quizzes.keys(), map(lambda q: q['name'], quizzes.values())))
-    print(all_quizzes)
+    print(all_quizzes)# no
     print(type(all_quizzes))
     search_results = {}
     for idno in all_quizzes:
@@ -68,7 +69,7 @@ def search():
             search_results[idno] = all_quizzes[idno]
             print(search_results)
     return flask.render_template('search.html',quiz_names=search_results)
-
+# no
 @app.route('/check_quiz/<id>', methods=['POST'])
 def check_quiz(id):
     quiz = copy.deepcopy(quizzes[id])
@@ -104,7 +105,7 @@ def check_quiz(id):
                                  question_answer=zip(quiz['questions'], answers_list), 
                                  correct=number_correct, 
                                  total=len(answers_list)
-                                 )
+                                 )# no
 
 
 if __name__ == '__main__':

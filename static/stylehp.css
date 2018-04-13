@@ -1,11 +1,12 @@
 #content {
-    width: 80%;
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
     background-color: #303333;
     padding: 15px;
-    font-family: 'Helvetica';
+    font-family: 'IBM Plex Sans', 'Helvetica';
     color: #FFFFFF;
+    font-size: 125%;
 }
 
 #title {
@@ -13,10 +14,10 @@
     padding: 5px;
     background-color: #303333;
     color: #FFEF3D;
-    font-size: 100pt;
+    font-size: 75pt;
     font-weight: bold;
     text-align: center;
-    font-family: 'Henny Penny';
+    font-family: 'Henny Penny', 'Cursive';
 }
 a:link {
     color: #FFFFFF;
