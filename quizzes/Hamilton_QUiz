@@ -4,7 +4,7 @@
     "questions": [
         {
             "text": "Who is the musical director for the New York version of Hamilton",
-            "options": [0
+            "options": [
                 ["Alex Lacamoire ", true],
                 ["Lin Manuel-Miranda", false],
                 ["Andrew Lloyd Webber", false],

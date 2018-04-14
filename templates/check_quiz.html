@@ -20,17 +20,15 @@
 {% endblock %}
 {% block page_title %}{{quiz['name']}} - Checking ({{correct}} / {{total}}){% endblock %}
 {% block questions %}
-    {% for question, choice in question_answer %}
+    {% for question in quiz['questions'] %}
         <div>
-            <h4 {% if choice[1] %} class="question-correct" {% else %} class="question-incorrect" {% endif %}>{{question['text']|safe}}</h4>
-            {% for answer in question['options'] %}
-                <p {% if answer[1] %} class="question-correct"  {% endif %}>
-                    {{answer[0]|safe}} {% if answer == choice %} - <strong> Chosen </strong> {% endif %}
+            <h4 {% if question['is_correct'] %} class="question-correct" {% else %} class="question-incorrect" {% endif %}>{{question['text']|safe}}</h4>
+            {% for option in question['options'] %}
+                <p {% if option[1] %} class="question-correct"  {% endif %}>
+                    {{option[0]|safe}} {% if option[2] %} - <strong> Chosen </strong> {% endif %}
                 </p>
             {% endfor %}
         </div>
-        {% if loop.revindex0 > 0 %}
-            <hr />
-        {% endif %}
+        <hr />
     {% endfor %}
 {% endblock %}
