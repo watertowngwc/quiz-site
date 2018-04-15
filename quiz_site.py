@@ -71,46 +71,60 @@ def search():
 
 @app.route('/check_quiz/<id>', methods=['POST'])
 def check_quiz(id):
-    responses = dict(flask.request.form.items())
-
-    # redirect to the quiz page if no questions were answered
-    if len(responses) == 0:
+    # Get the  answers from the form. Make them a dictionary.
+    # If they chose option # 2 for question # 3, then
+    # answers['3'] would be '2'
+    answers = dict(flask.request.form.items())
+    # Print to console for debugging
+    print(flask.request.form)
+    print(answers)
+    # Redirect them back to the quiz page if no questions were answered
+    if len(answers) == 0:
         return flask.redirect(flask.url_for('quiz', id=id))
-
+    # Get a copy of this quiz
+    # We can make changes to the copy without affecting the original
     quiz = copy.deepcopy(quizzes[id])
-
+    # Print to console for debugging
+    print(quiz)
+    # Every quiz has a list of questions
+    # Every question has its text and a list of options
+    # Now we go through the questions for this quiz
     number_correct = 0
-    question_number = 0
-    for question in quiz['questions']:
-
+    for question_number, question in enumerate(quiz['questions']):
+        # question_number is a literal number, like for example 4
+        # We need it to be a string, not a number. '4' is not the same as 4
+        question_number_str = str(question_number)
+        # If they gave an answer for this question, what is it?
+        if question_number_str in answers:
+            their_answer = answers[question_number_str]
+        else:
+            their_answer = None
+        # Every question has a list of options
+        # Every option is a list of two values, like:
+        #   ['The Aristocats', True]
+        # For this question, we go through its list of options
         question_correct = False
-        option_number = 0
-        for option in question['options']:
-
-            if str(question_number) in responses and responses[str(question_number)] == str(option_number):
+        for option_number, option in enumerate(question['options']):
+            # Is this option the one they chose for this question?            
+            if str(option_number) == their_answer:
+                # Mark this option as chosen
                 option.append(True)
-
+                # If this option is correct, then they got it right!
                 if option[1] == True:
                     question_correct = True
                     number_correct = number_correct + 1
-
+            # If this option was not chosen...
             else:
+                # Mark this option as not chosen
                 option.append(False)
-
-            option_number = option_number + 1
-
-        if question_correct == True:
-            question['is_correct'] = True
-        else:
-            question['is_correct'] = False
-
-        question_number = question_number + 1
-
-    # debug prints
-    print(flask.request.form)
+            # Now every option has a third value that is True or False, like:
+            #   ['The Aristocats', True, False]
+        # For this question, question_correct is now either True or False
+        # We put question_correct in this question's dictionary
+        question['is_correct'] = question_correct
+    # Print to console for debugging
     print(quiz['questions'])
-    print(responses)
-
+    # Show the results page
     return flask.render_template('check_quiz.html', 
                                  quiz=quiz, 
                                  correct=number_correct,
