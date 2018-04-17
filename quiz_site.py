@@ -41,16 +41,16 @@ def change_style():
 def tags():
     return flask.render_template('tags.html', categories=search.sites)
 
-@app.route('/quiz/<id>')
-def quiz(id):
-    if id not in quizzes:
+@app.route('/quiz/<quiz_name>')
+def quiz(quiz_name):
+    if quiz_name not in quizzes:
         return flask.abort(404)
-    quiz = copy.deepcopy(quizzes[id])
+    quiz = copy.deepcopy(quizzes[quiz_name])
     # questions = list(enumerate(quiz["questions"]))
     # quiz["questions"] = map(lambda t: t[1], questions)
     # ordering = list(map(lambda t: t[0], questions))
 
-    return flask.render_template('quiz.html', id=id, quiz=quiz)
+    return flask.render_template('quiz.html', quiz_name=quiz_name, quiz=quiz)
 
 @app.route('/fun')
 def fun():
@@ -69,8 +69,8 @@ def search():
             print(search_results)
     return flask.render_template('search.html',quiz_names=search_results)
 
-@app.route('/check_quiz/<id>', methods=['POST'])
-def check_quiz(id):
+@app.route('/check_quiz/<quiz_name>', methods=['POST'])
+def check_quiz(quiz_name):
     # Get the  answers from the form. Make them a dictionary.
     # If they chose option # 2 for question # 3, then
     # answers['3'] would be '2'
@@ -80,10 +80,10 @@ def check_quiz(id):
     print(answers)
     # Redirect them back to the quiz page if no questions were answered
     if len(answers) == 0:
-        return flask.redirect(flask.url_for('quiz', id=id))
+        return flask.redirect(flask.url_for('quiz', quiz_name=quiz_name))
     # Get a copy of this quiz
     # We can make changes to the copy without affecting the original
-    quiz = copy.deepcopy(quizzes[id])
+    quiz = copy.deepcopy(quizzes[quiz_name])
     # Print to console for debugging
     print(quiz)
     # Every quiz has a list of questions

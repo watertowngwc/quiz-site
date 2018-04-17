@@ -1,7 +1,7 @@
 {% extends "quiz_base.html" %}
 {% block page_title %}{{quiz['name']}}{% endblock %}
 {% block questions %}
-    <form method="post" action="/check_quiz/{{id}}">
+    <form method="post" action="/check_quiz/{{quiz_name}}">
 
         {% for question in quiz['questions'] %}
             {% set outer_loop = loop %}
