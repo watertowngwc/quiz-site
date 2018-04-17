@@ -84,7 +84,7 @@ def check_quiz(quiz_name):
     # Get the  answers from the form. Make them a dictionary.
     # If they chose option # 2 for question # 3, then
     # answers['3'] would be '2'
-    answers = dict(flask.request.form.items())
+    answers = flask.request.form
     # Print to console for debugging
     print(flask.request.form)
     print(answers)
@@ -93,7 +93,7 @@ def check_quiz(quiz_name):
         return flask.redirect(flask.url_for('quiz', quiz_name=quiz_name))
 
     quiz = copy.deepcopy(quizzes[quiz_name])
-    quiz.check_quiz()
+    quiz.check_quiz(answers)
     return flask.render_template('check_quiz.html', quiz=quiz)
 
     # # Get a copy of this quiz
@@ -148,5 +148,5 @@ def check_quiz(quiz_name):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)#, host='0.0.0.0', port=5000)
+    app.run(debug=True, host='0.0.0.0', port=5001)
 

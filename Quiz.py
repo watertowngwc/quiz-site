@@ -5,7 +5,10 @@ class Option():
 
     def parse_json(self, json_list):
         self.text = json_list[0]
-        self.is_correct = json_list[1]
+        if len(json_list) > 1:
+            self.is_correct = json_list[1]
+        else:
+            self.is_correct = False
         self.answer = None
         self.chosen = False
 
@@ -17,15 +20,17 @@ class Question:
     def parse_json(self, json_dict):
         self.text = json_dict['text']
         self.options = []
-        for option_json in json_dict:
+        for option_json in json_dict['options']:
             self.options.append(Option(option_json))
         self.answered_correctly = False
 
     def grade(self):
         self.answered_correctly = True
         for option in self.options:
+            print("{}: {} {}".format(option.text, option.is_correct, option.chosen))
             if option.is_correct != option.chosen:
-                answered_correctly = False
+                self.answered_correctly = False
+                break
         return self.answered_correctly
 
 
@@ -43,7 +48,7 @@ class Quiz:
         self.name = json_dict['name']
         self.description = json_dict.get('description', '')
         # self.quiz_type = json_dict.get('quiz_type', 'graded')
-        self.style_file = json_dict.get('style_file', 'style')
+        self.style_name = json_dict.get('style_name', 'style')
         self.questions = []
         for question_json in json_dict['questions']:
             self.questions.append(Question(question_json))
@@ -55,10 +60,10 @@ class Quiz:
         return len(self.questions)
 
     def check_quiz(self, answers):
-        for answer in answers:
-            question_no = int(answer[0])
-            option_no = int(answer[1])
-            self.questions[question_no].options[option_no].chosen = True
+        for entry in answers.lists():
+            question_num = entry[0]
+            for option_num in entry[1]:
+                self.questions[int(question_num)].options[int(option_num)].chosen = True
 
         for question in self.questions:
             question.grade()

@@ -24,8 +24,8 @@
 
         <span id="text"><br>Every quiz that has ever been made on this site. Have fun scrolling!</span>
         <ul>
-            {% for id, name in quiz_names %}
-                <li><a href="{{url_for('quiz', id=id)}}">{{name}}</a></li>
+            {% for quiz_name, quiz_readable_name in quiz_names %}
+                <li><a href="{{url_for('quiz', quiz_name=quiz_name)}}">{{quiz_readable_name}}</a></li>
                 <br>
             {% endfor %}
         </ul>
