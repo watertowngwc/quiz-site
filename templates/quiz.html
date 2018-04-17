@@ -1,14 +1,16 @@
 {% extends "quiz_base.html" %}
-{% block page_title %}{{quiz['name']}}{% endblock %}
+{% block page_title %}{{quiz.name}}{% endblock %}
 {% block questions %}
     <form method="post" action="/check_quiz/{{quiz_name}}">
 
-        {% for question in quiz['questions'] %}
+        {% for question in quiz.questions %}
             {% set outer_loop = loop %}
             <p>
-                <h4>{{question['text']|safe}}</h4>
-                {% for option in question['options'] %}
-                    <p><label><input type="checkbox" name="{{outer_loop.index0}}" value="{{loop.index0}}" /> {{option[0]|safe}}</label></p>
+                <h4>{{question.text|safe}}</h4>
+                {% for option in question.options %}
+                <!-- #TODO: change this to question.question_type? -->
+                    <p><label><input type="{{quiz.question_type}}" name="{{outer_loop.index0}}" value="{{loop.index0}}" /> {{option.text|safe}}</label></p>
+                    <!--<p><label><input type="{{quiz.question_type}}" name="{{outer_loop.index0}}" value="{{loop.index0}}" /> {{option.text|safe}}</label></p>-->
                 {% endfor %}
             </p>
         {% endfor %}

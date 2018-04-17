@@ -18,17 +18,19 @@
         }
     </style>
 {% endblock %}
-{% block page_title %}{{quiz['name']}} - Checking ({{correct}} / {{total}}){% endblock %}
+{% block page_title %}{{quiz.name}} - Checking ({{quiz.get_number_correct()}} / {{quiz.get_num_questions()}}){% endblock %}
 {% block questions %}
-    {% for question in quiz['questions'] %}
+    {% for question in quiz.questions %}
         <div>
-            <h4 {% if question['is_correct'] %} class="question-correct" {% else %} class="question-incorrect" {% endif %}>{{question['text']|safe}}</h4>
-            {% for option in question['options'] %}
-                <p {% if option[1] %} class="question-correct"  {% endif %}>
-                    {{option[0]|safe}} {% if option[2] %} - <strong> Chosen </strong> {% endif %}
+            <h4 {% if question.answered_correctly %} class="question-correct" {% else %} class="question-incorrect" {% endif %}>{{question.text|safe}}</h4>
+            {% for option in question.options %}
+                <p {% if option.is_correct %} class="question-correct"  {% endif %}>
+                    {{option.text|safe}} {% if option.chosen %} - <strong> Chosen </strong> {% endif %}
                 </p>
             {% endfor %}
         </div>
-        <hr />
+        {% if loop.revindex0 > 0 %}
+            <hr />
+        {% endif %}
     {% endfor %}
 {% endblock %}
