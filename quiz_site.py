@@ -4,7 +4,8 @@ import json
 import os
 import random
 import search
-from Quiz import *
+from MultipleChoiceQuiz import MultipleChoiceQuiz
+from SorterQuiz import SorterQuiz
 
 app = flask.Flask(__name__)
 quiz_dir = 'quizzes'
@@ -18,6 +19,8 @@ def load_quizzes():
         quiz_type = quiz_json.get('quiz_type', 'multiple_choice')
         if quiz_type == 'multiple_choice':
             quizzes[quiz] = MultipleChoiceQuiz(quiz_json)
+        elif quiz_type == 'sorter_quiz':
+            quizzes[quiz] = SorterQuiz(quiz_json)
         else:
             print("Invalid quiz type for quiz {} (quiz_type {})".format(quiz, quiz_type))
     return quizzes
@@ -107,7 +110,8 @@ def check_quiz(quiz_name):
 
     quiz = copy.deepcopy(quizzes[quiz_name])
     quiz.check_quiz(answers)
-    return flask.render_template('check_quiz.html', quiz=quiz)
+    template_to_render = quiz.get_template()
+    return flask.render_template(template_to_render, quiz=quiz)
 
     # # Get a copy of this quiz
     # # We can make changes to the copy without affecting the original

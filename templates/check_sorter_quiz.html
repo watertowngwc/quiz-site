@@ -1,0 +1,18 @@
+{% extends "quiz_base.html" %}
+{% block title %} {{quiz['name']}} {% endblock %}
+{% block page_title %}{{quiz.name}} - You are a {{quiz.result}}{% endblock %}
+{% block questions %}
+    {% for question in quiz.questions %}
+        <div>
+            <h4>{{question.text|safe}}</h4>
+            {% for option in question.options %}
+                <p>
+                    {{option.text|safe}} {% if option.chosen %} - <strong> Chosen </strong> {% endif %}
+                </p>
+            {% endfor %}
+        </div>
+        {% if loop.revindex0 > 0 %}
+            <hr />
+        {% endif %}
+    {% endfor %}
+{% endblock %}

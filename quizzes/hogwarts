@@ -1,0 +1,39 @@
+{
+    "name": "Hogwarts",
+    "description": "Which Hogwarts house do you belong to?",
+    "quiz_type": "sorter_quiz",
+    "question_type": "radio",
+    "style_name": "hogwarts_style",
+    "questions": [
+        {
+            "text": "Which adjective best describes you?",
+            "options": [
+                ["Slimy", ["Slytherin"]],
+                ["Kind", ["Hufflepuff"]],
+                ["Smart", ["Ravenclaw"]],
+                ["Brave", ["Gryffindor"]]
+            ]
+        },
+        {
+            "text": "What is your favorite color?",
+            "options": [
+                ["Red", ["Gryffindor"]],
+                ["Orange", ["Gryffindor", "Hufflepuff"]],
+                ["Yellow", ["Hufflepuff"]],
+                ["Green", ["Slytherin"]],
+                ["Blue", ["Ravenclaw"]],
+                ["Purple", ["Ravenclaw", "Gryffindor"]]
+            ]
+        },
+        {
+            "text": "Which of the following do you find most difficult to deal with?",
+            "options": [
+                ["Hunger", ["Gryffindor", "Slytherin"]],
+                ["Cold", ["Hufflepuff", "Ravenclaw"]],
+                ["Loneliness", ["Hufflepuff", "Gryffindor"]],
+                ["Boredom", ["Gryffindor", "Ravenclaw"]],
+                ["Being Ignored", ["Slytherin", "Ravenclaw"]]
+            ]
+        }
+    ]
+}
