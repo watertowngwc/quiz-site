@@ -9,12 +9,23 @@ from Quiz import *
 app = flask.Flask(__name__)
 quiz_dir = 'quizzes'
 
-quizzes = {}
-for quiz in os.listdir(quiz_dir):
-    print('Loading {}'.format(quiz))
-    quizzes[quiz] = Quiz(json.loads(open(os.path.join(quiz_dir, quiz)).read()))
 
+def load_quizzes():
+    quizzes = {}
+    for quiz in os.listdir(quiz_dir):
+        print('Loading {}'.format(quiz))
+        quiz_json = json.loads(open(os.path.join(quiz_dir, quiz)).read())
+        quiz_type = quiz_json.get('quiz_type', 'multiple_choice')
+        if quiz_type == 'multiple_choice':
+            quizzes[quiz] = MultipleChoiceQuiz(quiz_json)
+        else:
+            print("Invalid quiz type for quiz {} (quiz_type {})".format(quiz, quiz_type))
+    return quizzes
+
+
+quizzes = load_quizzes()
 style_button = json.loads(open(os.path.join('config', 'config.json')).read())
+
 
 @app.route('/')
 def index():
@@ -85,9 +96,11 @@ def check_quiz(quiz_name):
     # If they chose option # 2 for question # 3, then
     # answers['3'] would be '2'
     answers = flask.request.form
+
     # Print to console for debugging
-    print(flask.request.form)
-    print(answers)
+    # print(flask.request.form)
+    # print(answers)
+
     # Redirect them back to the quiz page if no questions were answered
     if len(answers) == 0:
         return flask.redirect(flask.url_for('quiz', quiz_name=quiz_name))
