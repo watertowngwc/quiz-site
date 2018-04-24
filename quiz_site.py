@@ -113,56 +113,6 @@ def check_quiz(quiz_name):
     template_to_render = quiz.get_template()
     return flask.render_template(template_to_render, quiz=quiz)
 
-    # # Get a copy of this quiz
-    # # We can make changes to the copy without affecting the original
-    # quiz = copy.deepcopy(quizzes[quiz_name])
-    # # Print to console for debugging
-    # print(quiz)
-    # # Every quiz has a list of questions
-    # # Every question has its text and a list of options
-    # # Now we go through the questions for this quiz
-    # number_correct = 0
-    # for question_number, question in enumerate(quiz['questions']):
-    #     # question_number is a literal number, like for example 4
-    #     # We need it to be a string, not a number. '4' is not the same as 4
-    #     question_number_str = str(question_number)
-    #     # If they gave an answer for this question, what is it?
-    #     if question_number_str in answers:
-    #         their_answer = answers[question_number_str]
-    #     else:
-    #         their_answer = None
-    #     # Every question has a list of options
-    #     # Every option is a list of two values, like:
-    #     #   ['The Aristocats', True]
-    #     # For this question, we go through its list of options
-    #     question_correct = False
-    #     for option_number, option in enumerate(question['options']):
-    #         # Is this option the one they chose for this question?
-    #         if str(option_number) == their_answer:
-    #             # Mark this option as chosen
-    #             option.append(True)
-    #             # If this option is correct, then they got it right!
-    #             if option[1] == True:
-    #                 question_correct = True
-    #                 number_correct = number_correct + 1
-    #         # If this option was not chosen...
-    #         else:
-    #             # Mark this option as not chosen
-    #             option.append(False)
-    #         # Now every option has a third value that is True or False, like:
-    #         #   ['The Aristocats', True, False]
-    #     # For this question, question_correct is now either True or False
-    #     # We put question_correct in this question's dictionary
-    #     question['is_correct'] = question_correct
-    # # Print to console for debugging
-    # print(quiz['questions'])
-    # # Show the results page
-    # return flask.render_template('check_quiz.html',
-    #                              quiz=quiz,
-    #                              correct=number_correct,
-    #                              total=len(quiz['questions'])
-    #                              )
-
 
 if __name__ == '__main__':
     app.run(debug=True) #, host='0.0.0.0', port=5000)
