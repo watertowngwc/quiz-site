@@ -6,6 +6,7 @@ import random
 import search
 from MultipleChoiceQuiz import MultipleChoiceQuiz
 from SorterQuiz import SorterQuiz
+from MadLibQuiz import MadLibQuiz
 
 app = flask.Flask(__name__)
 quiz_dir = 'quizzes'
@@ -21,6 +22,8 @@ def load_quizzes():
             quizzes[quiz] = MultipleChoiceQuiz(quiz_json)
         elif quiz_type == 'sorter_quiz':
             quizzes[quiz] = SorterQuiz(quiz_json)
+        elif quiz_type == 'mad_lib':
+            quizzes[quiz] = MadLibQuiz(quiz_json)
         else:
             print("Invalid quiz type for quiz {} (quiz_type {})".format(quiz, quiz_type))
     return quizzes
@@ -109,6 +112,7 @@ def check_quiz(quiz_name):
         return flask.redirect(flask.url_for('quiz', quiz_name=quiz_name))
 
     quiz = copy.deepcopy(quizzes[quiz_name])
+    print(answers)
     quiz.check_quiz(answers)
     template_to_render = quiz.get_template()
     return flask.render_template(template_to_render, quiz=quiz)

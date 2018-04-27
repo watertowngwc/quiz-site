@@ -1,0 +1,50 @@
+{
+    "name": "What Type of Maji Are You",
+    "description": "After reading the hit novel 'Children of Blood and Bone' by Tomi Adeyemi, the author has decided to do one of those personality quizzes to see what type of Orïshan magic you would specialize in. Even though maji-ness is mainly hereditary and not personality-based in the slightest, it's still a fun quiz.",
+    "quiz_type": "sorter_quiz",
+    "question_type": "radio",
+    "style_name": "maji_style",
+    "questions": [
+        {
+            "text": "What would your dream job be?",
+            "options": [
+                ["pilot", ["winder"]],
+                ["fisherperson", ["tider"]],
+                ["firefighter", ["burner"]],
+                ["engineer", ["welder"]],
+                ["farmer", ["grounder"]],
+                ["photographer", ["lighter"]],
+                ["doctor", ["cancer", "healer"]],
+                ["vet", ["tamer"]],
+                ["undertaker", ["reaper"]],
+                ["maybe a therapist", ["connector"]],
+                ["I really have no idea", ["seer"]]
+            ]
+        },
+        {
+            "text": "What's your favorite activity?",
+            "options": [
+                ["hiking I guess", ["winder"]],
+                ["swimming", ["tider"]],
+                ["lighting fires for fun", ["burner"]],
+                ["playing in the dirt", ["grounder"]],
+                ["sunbathing", ["lighter", "healer"]],
+                ["going to the zoo", ["tamer"]],
+                ["talking to people", ["connector"]],
+                ["reading books", ["seer"]],
+                ["making something", ["welder"]],
+                ["crying alone in a closet", ["cancer", "reaper"]]
+            ]
+        },
+        {
+            "text": "Are you?:",
+            "options": [
+                ["Outgoing", ["tamer", "connector", "healer", "winder"]],
+                ["quiet", ["reaper", "grounder", "welder"]],
+                ["somewhere in between outgoing and quiet", ["seer", "lighter"]],
+                ["fun/goofy", ["burner", "tider"]],
+                ["just plain weird", ["cancer"]]
+            ]
+        }
+    ]
+}
