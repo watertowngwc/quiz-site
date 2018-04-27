@@ -1,0 +1,58 @@
+{
+    "name": "Are You Piesheen",
+    "description": "Which Hogwarts house do you belong to?",
+    "quiz_type": "sorter_quiz",
+    "question_type": "radio",
+    "style_name": "Are_You_Piesheen",
+    "questions": [
+        {
+            "text": "Which adjective best describes you?",
+            "options": [
+                ["Cat", ["Piesheen"]],
+                ["Dog", ["Dog"]],
+                ["Smart", ["Human"]],
+                ["Pie", ["Pie"]]
+            ]
+        },
+        {
+            "text": "How do you walk?",
+            "options": [
+                ["Skip", ["Pie"]],
+                ["Run", ["Dog"]],
+                ["Lay down and scootch yourself across the floor", ["Piesheen"]],
+                ["Walk normaly (boring)", ["Human"]]
+
+            ]
+        },
+        {
+            "text": "Which of the following do you find most difficult to deal with but when you solve the problem, you feel... AMAZING?",
+            "options": [
+                ["Hunger", ["Piesheen"]],
+                ["Math problem", ["Huamn"]],
+                ["Loneliness", ["Dog"]],
+                ["Trying to not get eaten", ["Pie"]],
+                ["Being Ignored", ["Cat"]]
+             ]
+        },
+        {
+            "text": "Why do humans think that they are so cool?",
+            "options": [
+                ["Because they have skills", ["Humans"]],
+                ["Because they can solve things", ["Huamn"]],
+                ["Because they can be lazy", ["Cat"]],
+                ["Because they have pets (like Pie and Pusheen)", ["Piesheen"]],
+                ["Because they actually have friends", ["Dog"]]
+            ]
+        },
+        {
+            "text": "Why is Piesheen awesome?",
+            "options": [
+                ["Piesheen is not awesome", ["Humans"]],
+                ["Just too cool for school (that is why she is not educated)", ["Cat"]],
+                ["Because she just is", ["Piesheen"]],
+                ["Piesheen is the worst, and Pie and Pusheen", ["Human"]],
+                ["Because they are cats", ["Dog"]]
+            ]
+        }
+    ]
+}

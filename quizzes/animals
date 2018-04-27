@@ -1,0 +1,38 @@
+{
+    "name": "Animals",
+    "description": "Which animal are you? A dog, dolphin, hamster, pig, lion, tiger, or cat?",
+    "quiz_type": "sorter_quiz",
+    "question_type": "radio",
+    "style_name": "animals_style",
+    "questions": [
+        {
+            "text": "Which adjective best describes you?",
+            "options": [
+                ["Friendly", ["Dog", "Dolphin"]],
+                ["Energetic", ["Dog", "Hamster"]],
+                ["Smart", ["Dog", "Pig"]],
+                ["Brave", ["Lion", "Tiger"]],
+                ["Quiet", ["Cat"]]
+                ]
+        },
+        {
+            "text": "What is your favorite food?",
+            "options": [
+                ["Sweets", ["Dog"]],
+                ["Pizza", ["Dog", "Hamster", "Pig", "Cat"]],
+                ["Vegetables + Fruits", ["Cat", "Dog"]],
+                ["Meat", ["Lion", "Tiger"]]
+                ]
+        },
+        {
+            "text": "Which of the following things you hate the most?",
+            "options": [
+                ["People staring at you for a long time", ["Dog"]],
+                ["Dressing up", ["Dog", "Cat"]],
+                ["Teasing", ["Dog", "Cat", "Lion", "Tiger", "Pig"]],
+                ["Loud noises", ["Cat", "Hamsters"]]
+
+            ]
+        }
+    ]
+}
