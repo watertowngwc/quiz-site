@@ -38,7 +38,7 @@ def index():
     # create a list of tuples of (quiz_id, quiz_name) for displaying on the front page
     quiz_names = []
     for quiz_id in quizzes:
-        quiz_names.append((quiz_id, quizzes[quiz_id].name))
+        quiz_names.append((quiz_id, quizzes[quiz_id]))
 
     return flask.render_template('index.html', quiz_names=quiz_names, style_button=style_button)
 
