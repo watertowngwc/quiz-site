@@ -105,6 +105,7 @@ class Quiz:
         self.description = ''
         self.style_name = ''
         self.question_type = ''
+        self.tags = ['']   # the empty string allows for filtering for all quizzes when tag = ''
         self.parse_json(json_dict)
 
     def make_new_question(self, question_json):
@@ -114,6 +115,7 @@ class Quiz:
         self.name = json_dict['name']
         self.description = json_dict.get('description', '')
         self.style_name = json_dict.get('style_name', 'style')
+        self.tags.extend(json_dict.get('tags', ''))
         self.questions = []
         for question_json in json_dict['questions']:
             new_question = self.make_new_question(question_json)
@@ -139,59 +141,3 @@ class Quiz:
         raise NotImplementedError
 
 
-class MultipleChoiceQuiz(Quiz):
-
-    def make_new_question(self, question_json):
-        return MultipleChoiceQuestion(question_json)
-
-    def check_quiz(self, answers):
-        for entry in answers.lists():
-            question_num = entry[0]
-            for option_num in entry[1]:
-                self.questions[int(question_num)].options[int(option_num)].chosen = True
-
-        for question in self.questions:
-            question.grade()
-
-    def get_template(self):
-        return 'check_quiz.html'
-
-
-class SorterQuiz(Quiz):
-
-    def __init__(self, json_dict):
-        self.result = ''  # the final answer of the quiz
-        Quiz.__init__(self, json_dict)
-
-    def make_new_question(self, question_json):
-        return SorterQuestion(question_json)
-
-    def check_quiz(self, answers):
-        for entry in answers.lists():
-            question_num = entry[0]
-            for option_num in entry[1]:
-                self.questions[int(question_num)].options[int(option_num)].chosen = True
-
-        # tally up the total points for each category
-        category_totals = {}
-        for question in self.questions:
-            question_points = question.grade()
-            for cat in question_points:
-                if cat in category_totals:
-                    category_totals[cat] += 1
-                else:
-                    category_totals[cat] = 1
-
-        # find which category has the highest total
-        print(category_totals)
-        high_score = 0
-        winning_category = ''
-        for cat in category_totals:
-            if category_totals[cat] > high_score:
-                high_score = category_totals[cat]
-                winning_category = cat
-
-        self.result = winning_category
-
-    def get_template(self):
-        return 'check_sorter_quiz.html'

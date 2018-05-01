@@ -1,6 +1,7 @@
 {
     "name": "Hogwarts",
     "description": "Which Hogwarts house do you belong to?",
+    "tags": ["fantasy"],
     "quiz_type": "sorter_quiz",
     "question_type": "radio",
     "style_name": "hogwarts_style",
