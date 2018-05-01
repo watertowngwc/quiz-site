@@ -1,0 +1,6 @@
+{% extends "quiz_base.html" %}
+{% block title %} {{quiz['name']}} {% endblock %}
+{% block page_title %}{{quiz.name}}{% endblock %}
+{% block questions %}
+    {{quiz.result}}
+{% endblock %}

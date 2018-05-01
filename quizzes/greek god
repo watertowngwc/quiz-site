@@ -1,0 +1,57 @@
+{
+    "name": "SPIRIT ANIMALS",
+    "description": "WHAT'S YOUR SPIRIT ANIMAL?",
+    "quiz_type": "sorter_quiz",
+    "question_type": "radio",
+    "style_name": "nice",
+    "questions": [
+        {
+            "text": "Which adjective best describes you?",
+            "options": [
+                ["fast", ["Peregrine Falcon"]],
+                ["Funny", ["Pig"]],
+                ["Brave", ["Lion"]],
+                ["Loyal", ["dog"]],
+                ["Loyal", ["dog"]],
+                ["Loyal", ["dog"]],
+                ["Loyal", ["dog"]],
+                ["Loyal", ["dog"]],
+                ["Loyal", ["dog"]],
+                ["Loyal", ["dog"]],
+                ["annoying", ["mockingbird"]]
+                  ]
+        },
+        {
+            "text": "What are your hobbies?",
+            "options": [
+                ["singing", ["mocking bird"]],
+                ["playing catch", ["dog"]],
+                ["hiking", ["lion"]],
+                ["skydiving", ["Peregrine Falcon"]],
+                ["getting dirty", ["pig"]]
+            ]
+        },
+        {
+            "text": "what is your favorite color",
+            "options": [
+                ["Red", ["Lion"]],
+                ["Grey", ["mocking bird"]],
+                ["Brown", ["Pig"]],
+                ["Pink", ["Pig"]],
+                ["Orange", ["Peregrine Falcon"]],
+                ["Green", ["Dog"]],
+                ["Yellow", ["Peregrine Falcon"]]
+            ]
+        },
+        {
+            "text": "what are your favorite sports?",
+            "options": [
+                ["Frisbee", ["Dog"]],
+                ["track and field: hurdles", ["Lion"]],
+                ["Diving", ["Peregrine Falcon"]],
+                ["Competetive Eating", ["Pig"]],
+                ["BaseBall", ["mocking bird"]]
+            ]
+        }
+    ]
+}
