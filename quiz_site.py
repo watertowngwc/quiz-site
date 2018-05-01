@@ -60,9 +60,9 @@ def change_style():
         style_button = True
     return flask.redirect(flask.url_for('index'))
 
-@app.route('/tags')
-def tags():
-    return flask.render_template('tags.html', categories=search.sites)
+# @app.route('/tags')
+# def tags():
+#     return flask.render_template('tags.html', categories=search.sites)
 
 @app.route('/quiz/<quiz_name>')
 def quiz(quiz_name):
