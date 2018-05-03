@@ -3,6 +3,7 @@
     "description": "WHAT'S YOUR SPIRIT ANIMAL?",
     "quiz_type": "sorter_quiz",
     "question_type": "radio",
+    "tags": ["animals"],
     "style_name": "nice",
     "questions": [
         {
