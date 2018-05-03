@@ -13,6 +13,7 @@ quiz_dir = 'quizzes'
 
 
 def load_quizzes():
+    likes = json.loads(open(os.path.join('config', 'likes.json')).read())
     quizzes = {}
     for quiz in os.listdir(quiz_dir):
         print('Loading {}'.format(quiz))
@@ -26,6 +27,7 @@ def load_quizzes():
             quizzes[quiz] = MadLibQuiz(quiz_json)
         else:
             print("Invalid quiz type for quiz {} (quiz_type {})".format(quiz, quiz_type))
+        quizzes[quiz].likes = likes.get(quiz, 0)
     return quizzes
 
 
@@ -39,6 +41,8 @@ def index():
     quiz_names = []
     for quiz_id in quizzes:
         quiz_names.append((quiz_id, quizzes[quiz_id]))
+
+    quiz_names.sort(key=lambda q: q[1].likes, reverse=True)
 
     return flask.render_template('index.html', quiz_names=quiz_names, style_button=style_button)
 
@@ -96,6 +100,19 @@ def search():
             print(search_results)
     return flask.render_template('search.html',quiz_names=search_results)
 
+@app.route('/like/<quiz_name>', methods=['POST'])
+def like(quiz_name):
+    print("Someone clicked LIKE for the quiz called {}".format(quiz_name))
+    quiz = quizzes[quiz_name]
+    likes = json.loads(open(os.path.join('config', 'likes.json')).read())
+    print(likes)
+    print("This quiz currently has {} likes".format(quiz.likes))
+    quiz.likes += 1
+    print("NOW this quiz has {} likes".format(quiz.likes))
+    likes[quiz_name] = quiz.likes
+    json.dump(likes, open(os.path.join('config', 'likes.json'), 'w'))
+    return flask.redirect(flask.url_for('index'))
+
 @app.route('/check_quiz/<quiz_name>', methods=['POST'])
 def check_quiz(quiz_name):
     # Get the  answers from the form. Make them a dictionary.
@@ -115,6 +132,7 @@ def check_quiz(quiz_name):
     print(answers)
     quiz.check_quiz(answers)
     template_to_render = quiz.get_template()
+    quiz.id = quiz_name
     return flask.render_template(template_to_render, quiz=quiz)
 
 
