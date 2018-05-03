@@ -18,11 +18,13 @@
         <span id="category1"><a href="{{url_for('about')}}">About Us</a></span>
         <br>
         <span id="category2"><a href="{{url_for('fun')}}">Fun</a></span>
+        <br>
+        <span id="category3"><a href="{{url_for('index', tags='animals')}}">Animal Quizzes</a></span>
         <form method="post" action="/change_style">
-            <input type="submit" value="Color Switch">
+            <input type="submit" value="Style Button">
         </form>
 
-        <span id="text"><br>Every quiz that has ever been made on this site. Have fun scrolling!</span>
+        <span id="text"><br>Play a quiz!</span>
         <ul>
             {% for quiz_name, quiz in quiz_names %}
             <li><a href="{{url_for('quiz', quiz_name=quiz_name)}}">{{quiz.name}}</a> <b>{{quiz.likes}}</b></li>

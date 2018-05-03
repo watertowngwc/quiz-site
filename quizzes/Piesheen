@@ -2,6 +2,7 @@
     "name": "Piesheen",
     "description": "How much do you know about Pusheen?",
     "style_name": "Piesheen",
+    "tags": ["animals"],
     "questions": [
         {
             "text": "Who is Pusheen?",
