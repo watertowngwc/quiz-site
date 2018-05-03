@@ -1,6 +1,7 @@
 {
     "name": "MOst popular Cats",
     "description": "How much do you know about these leading ladies?",
+    "tags": ["animals"],
     "questions": [
         {
             "text": "What is the most popular and cutest cat in the world?",

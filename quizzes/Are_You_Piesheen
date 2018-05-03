@@ -4,6 +4,7 @@
     "quiz_type": "sorter_quiz",
     "question_type": "radio",
     "style_name": "Are_You_Piesheen",
+    "tags": ["animals"],
     "questions": [
         {
             "text": "Which adjective best describes you?",
