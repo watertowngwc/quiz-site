@@ -34,11 +34,13 @@ style_button = json.loads(open(os.path.join('config', 'config.json')).read())
 
 
 @app.route('/')
-def index():
+@app.route('/categories/<tags>')
+def index(tags=''):
     # create a list of tuples of (quiz_id, quiz_name) for displaying on the front page
     quiz_names = []
     for quiz_id in quizzes:
-        quiz_names.append((quiz_id, quizzes[quiz_id]))
+        if tags in quizzes[quiz_id].tags:
+            quiz_names.append((quiz_id, quizzes[quiz_id]))
 
     return flask.render_template('index.html', quiz_names=quiz_names, style_button=style_button)
 
