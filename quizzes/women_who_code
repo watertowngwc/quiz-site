@@ -1,7 +1,7 @@
 {
     "name": "Women in tech",
     "description": "How much do you know about these leading ladies?",
-    "tags": ["Science"]
+    "tags": ["Science"],
     "questions": [
         {
             "text": "Which big 90's dot-com company has Marissa Mayer as its CEO?",

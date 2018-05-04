@@ -4,7 +4,7 @@
     "quiz_type": "sorter_quiz",
     "question_type": "radio",
     "style_name": "maji_style",
-    "tags": ["Sort Yourself", "Characters"]
+    "tags": ["Sort Yourself", "Characters"],
     "questions": [
         {
             "text": "What would your dream job be?",
