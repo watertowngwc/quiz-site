@@ -1,6 +1,7 @@
 {
     "name": "Coding Challenge: The Quiz",
     "description": "See if you can figure out what these code snippets will print!",
+    "tags": ["Science"]
     "questions": [
         {
             "text": "Question 1<br><code>print('Hello!')</code>",

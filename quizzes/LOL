@@ -1,7 +1,7 @@
 {
     "name": "WHICH.",
     "description": "How much do you know about these fish?",
-    "tags": ["animals"],
+    "tags": ["Animals"],
     "questions": [
         {
             "text": "what is the ugliest fish",
