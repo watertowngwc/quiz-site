@@ -3,6 +3,7 @@
     "description": "This is a mad lib quiz to satisfy your mad lib needs",
     "quiz_type": "mad_lib",
     "question_type": "",
+    "tags": ["Sort Yourself"],
     "questions": [
         {
             "text": "Enter a verb:",
