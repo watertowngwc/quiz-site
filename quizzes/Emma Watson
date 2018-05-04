@@ -1,6 +1,7 @@
 {
     "name": "Emma Watson",
     "description": "How much do you know about the legendary Emma Watson?",
+    "tags": ["People", "Pop Culture"],
     "questions": [
         {
             "text": "When was Emma Watson born?",

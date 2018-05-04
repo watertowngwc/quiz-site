@@ -2,6 +2,9 @@
 {% block title %} {{quiz['name']}} {% endblock %}
 {% block page_title %}{{quiz.name}} - You are a {{quiz.result}}{% endblock %}
 {% block questions %}
+    <form method="post" action="/like/{{quiz.id}}">
+        <input type="submit" value="Did you like this quiz?">
+    </form>
     {% for question in quiz.questions %}
         <div>
             <h4>{{question.text|safe}}</h4>

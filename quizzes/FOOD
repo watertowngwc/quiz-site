@@ -1,6 +1,7 @@
 {
     "name": "FOOD!",
     "description": "How much do you know about food?",
+    "tags": ["Food"],
     "questions": [
         {
             "text": "Which one is a fruit?",
@@ -26,7 +27,7 @@
             "options": [
                 ["carrot", false],
                 ["steak", true],
-                ["chicken", false],
+                ["popcorn", false],
                 ["brussel sprouts", false],
                 ["eggs", true]
             ]

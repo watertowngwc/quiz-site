@@ -2,21 +2,21 @@
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #c2b7b5;
+    background-color: #A0DB8E;
     padding: 15px;
-    font-family: 'IBM Plex Sans';
+    font-family: 'Berkshire Swash';
     color: #000000;
 }
 
 #title {
     display: block;
     padding: 5px;
-    background-color: #857d7b;
+    background-color: #1e8100;
     color: #000000;
-    font-size: 60pt;
+    font-size: 100pt;
     font-weight: bold;
     text-align: center;
-    font-family: 'Sonsie One';
+    font-family: 'Berkshire Swash';
 }
 a:link {
     color: #FF1493;
@@ -24,7 +24,8 @@ a:link {
 
 body {
     background-color:rgb(0,0,0);
-    background-image:url(https://ewedit.files.wordpress.com/2017/11/copy-of-children-of-blood-and-bone.jpg?crop=0px%2C1862px%2C1856px%2C975px&resize=1200%2C630);
+    background-image:url(https://media.giphy.com/media/13n4Hd98ewKJsQ/giphy.gif);
+    /*waves: background-image:url(https://media.giphy.com/media/l4hLPzGuhO9FYXQd2/giphy.gif);*/
     background-position:top left;
     background-repeat:repeat;
     background-attachment:fixed;
