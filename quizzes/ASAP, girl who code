@@ -1,6 +1,7 @@
 {
     "name": "FISH QUIZ.",
     "description": "How much do you know about these fish?",
+    "tags": ["Animals"],
     "questions": [
         {
             "text": "what is the ugliest fish",

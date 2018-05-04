@@ -1,6 +1,7 @@
 {
     "name": "Panda's",
     "description": "How much do you know about panda's?",
+    "tags": ["Animals"],
     "questions": [
         {
             "text": "What Panda lives in China?",

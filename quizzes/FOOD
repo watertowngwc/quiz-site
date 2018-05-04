@@ -1,6 +1,7 @@
 {
     "name": "FOOD!",
     "description": "How much do you know about food?",
+    "tags": ["Food"],
     "questions": [
         {
             "text": "Which one is a fruit?",
