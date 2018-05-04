@@ -2,6 +2,7 @@
     "name": "Harry Potter Quiz",
     "description": "Test your wizarding world wisdom!",
     "style_name": "stylehp",
+    "tags": ["Pop Culture", "Characters"]
     "questions": [
         {
             "text": "Where did Harry Potter go to school?",

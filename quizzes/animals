@@ -4,7 +4,7 @@
     "quiz_type": "sorter_quiz",
     "question_type": "radio",
     "style_name": "animals_style",
-    "tags": ["animals"],
+    "tags": ["Animals"],
     "questions": [
         {
             "text": "Which adjective best describes you?",
