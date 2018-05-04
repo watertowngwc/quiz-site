@@ -8,7 +8,7 @@
         {
             "text": "Which adjective best describes you?",
             "options": [
-                ["fast", ["Peregrine Falcon"]],
+                ["fast", ["Falcon"]],
                 ["Funny", ["Pig"]],
                 ["Brave", ["Lion"]],
                 ["Loyal", ["dog"]],
@@ -21,7 +21,7 @@
                 ["singing", ["mocking bird"]],
                 ["playing catch", ["dog"]],
                 ["hiking", ["lion"]],
-                ["skydiving", ["Peregrine Falcon"]],
+                ["skydiving", ["Falcon"]],
                 ["getting dirty", ["pig"]]
             ]
         },
@@ -32,7 +32,7 @@
                 ["Grey", ["mocking bird"]],
                 ["Brown", ["Pig"]],
                 ["Pink", ["Pig"]],
-                ["Orange", ["Peregrine Falcon"]],
+                ["Orange", ["Falcon"]],
                 ["Green", ["Dog"]],
                 ["Yellow", ["Peregrine Falcon"]]
             ]
@@ -42,7 +42,7 @@
             "options": [
                 ["Frisbee", ["Dog"]],
                 ["track and field: hurdles", ["Lion"]],
-                ["Diving", ["Peregrine Falcon"]],
+                ["Diving", ["Falcon"]],
                 ["Competetive Eating", ["Pig"]],
                 ["BaseBall", ["mocking bird"]]
             ]

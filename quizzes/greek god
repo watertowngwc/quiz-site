@@ -1,56 +1,69 @@
 {
-    "name": "SPIRIT ANIMALS",
-    "description": "WHAT'S YOUR SPIRIT ANIMAL?",
+    "name": "percy jackson greek gods",
+    "description": "WHAT GREEK GOD IS YOUR PARENT?",
     "quiz_type": "sorter_quiz",
     "question_type": "radio",
     "style_name": "nice",
     "questions": [
         {
-            "text": "Which adjective best describes you?",
+            "text": "what is your favorite color?",
             "options": [
-                ["fast", ["Peregrine Falcon"]],
-                ["Funny", ["Pig"]],
-                ["Brave", ["Lion"]],
-                ["Loyal", ["dog"]],
-                ["Loyal", ["dog"]],
-                ["Loyal", ["dog"]],
-                ["Loyal", ["dog"]],
-                ["Loyal", ["dog"]],
-                ["Loyal", ["dog"]],
-                ["Loyal", ["dog"]],
-                ["annoying", ["mockingbird"]]
+                ["white", ["Zeus"]],
+                ["pink", ["Aphrodite"]],
+                ["silver", ["Artemis"]],
+                ["yellow", ["Apollo"]],
+                ["blue", ["Poseidon"]],
+                ["brown", ["Hermes"]],
+                ["IDK/IDC", ["you are a mortal you don't belong in the demigod world"]],
+                ["purple", ["Dionysus"]],
+                ["red", ["Ares"]],
+                ["grey", ["Athena"]],
+                ["black", ["Hades"]],
+                ["green", ["Demeter"]],
+                ["orange", ["Hephaestus"]]
                   ]
         },
         {
             "text": "What are your hobbies?",
             "options": [
-                ["singing", ["mocking bird"]],
-                ["playing catch", ["dog"]],
-                ["hiking", ["lion"]],
-                ["skydiving", ["Peregrine Falcon"]],
-                ["getting dirty", ["pig"]]
+            ["goin on Snapchat", ["you are a mortal you don't belong in the demigod world"]],
+            ["skydiving", ["Zeus"]],
+            ["hunting", ["Artemis"]],
+            ["walking along the beach", ["Poseidon"]],
+            ["singing", ["Apollo"]],
+            ["partying", ["Dionysus"]],
+            ["gardening", ["Demeter"]],
+            ["traveling", ["Hermes"]],
+            ["reading", ["Athena"]],
+            ["making sure I look good", ["Aphrodite"]],
+            ["building things", ["Hephaestus"]],
+            ["sitting in dark corners", ["Hades"]],
+            ["fighting", ["Ares"]]
             ]
         },
         {
-            "text": "what is your favorite color",
+                "text": "IS YOUR GREEK GOD PARENT A FEMALE OR MALE ",
             "options": [
-                ["Red", ["Lion"]],
-                ["Grey", ["mocking bird"]],
-                ["Brown", ["Pig"]],
-                ["Pink", ["Pig"]],
-                ["Orange", ["Peregrine Falcon"]],
-                ["Green", ["Dog"]],
-                ["Yellow", ["Peregrine Falcon"]]
+                ["female", ["Artemis", "Athena", "Aphrodite", "Demeter"]],
+                ["I don't know", ["you are a mortal you don't belong in the demigod world", "Athena", "Aphrodite", "Demeter", "Zeus", "Hermes", "Apollo", "Ares", "Dionysus", "Hephaestus", "Hades", "Poseidon" ]],
+                ["male", ["Zeus", "Hermes", "Apollo", "Ares", "Dionysus", "Hephaestus", "Hades", "Poseidon"]]
             ]
         },
         {
-            "text": "what are your favorite sports?",
+                "text": "WHAT ARE YOUR FAVORITE SPORTS?",
             "options": [
-                ["Frisbee", ["Dog"]],
-                ["track and field: hurdles", ["Lion"]],
-                ["Diving", ["Peregrine Falcon"]],
-                ["Competetive Eating", ["Pig"]],
-                ["BaseBall", ["mocking bird"]]
+                ["Hockey", ["Hades"]],
+                ["archery", ["Apollo", "Artemis"]],
+                ["wrestling", ["Ares"]],
+                ["synchronized swimming", ["Poseidon"]],
+                ["climbing", ["Demeter"]],
+                ["track and field", ["Zeus"]],
+                ["sports are overrated", ["Aphrodite"]],
+                ["ping pong", ["you are a mortal you don't belong in the demigod world"]],
+                ["weight lifting", ["Hephaestus"]],
+                ["Competetive Eating.", ["Dionysus"]],
+                ["cross country", ["Hermes"]],
+                ["any", ["Athena"]]
             ]
         }
     ]
