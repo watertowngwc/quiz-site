@@ -106,6 +106,8 @@ class Quiz:
         self.style_name = ''
         self.question_type = ''
         self.tags = ['']   # the empty string allows for filtering for all quizzes when tag = ''
+        self.id = ''
+        self.likes = 0
         self.parse_json(json_dict)
 
     def make_new_question(self, question_json):

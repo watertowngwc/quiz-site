@@ -27,7 +27,13 @@
         <br>
         <form action="{{url_for('index', tags='animals')}}">
             <input type="submit" value="Animal Quizzes" />
-        <span id="category3"><a href="{{url_for('index', tags='animals')}}">Animal Quizzes</a></span>
+        <span id="category3"><a href="{{url_for('index', tags='Animals')}}">Animals</a></span>
+        <span id="category4"><a href="{{url_for('index', tags='People')}}">People</a></span>
+        <span id="category5"><a href="{{url_for('index', tags='Pop Culture')}}">Pop Culture</a></span>
+        <span id="category6"><a href="{{url_for('index', tags='Characters')}}">Characters</a></span>
+        <span id="category7"><a href="{{url_for('index', tags='Food')}}">Food</a></span>
+        <span id="category8"><a href="{{url_for('index', tags='Science')}}">Science</a></span>
+        <span id="category9"><a href="{{url_for('index', tags='Sort Yourself')}}">Sort Yourself</a></span>
         </form>
         <form method="post" action="/change_style">
             <input type="submit" value="Style Button">
@@ -36,7 +42,7 @@
         <span id="text"><br>Play a quiz!</span>
         <ul>
             {% for quiz_name, quiz in quiz_names %}
-                <li><a href="{{url_for('quiz', quiz_name=quiz_name)}}">{{quiz.name}}</a></li>
+            <li><a href="{{url_for('quiz', quiz_name=quiz_name)}}">{{quiz.name}}</a> <b>{{quiz.likes}}</b></li>
                 <br>
             {% endfor %}
         </ul>

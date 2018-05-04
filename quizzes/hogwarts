@@ -5,6 +5,7 @@
     "quiz_type": "sorter_quiz",
     "question_type": "radio",
     "style_name": "hogwarts_style",
+    "tags": ["Sort Yourself", "Pop Culture", "Characters"],
     "questions": [
         {
             "text": "Which adjective best describes you?",
