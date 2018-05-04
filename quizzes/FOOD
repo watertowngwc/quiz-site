@@ -26,7 +26,7 @@
             "options": [
                 ["carrot", false],
                 ["steak", true],
-                ["chicken", false],
+                ["popcorn", false],
                 ["brussel sprouts", false],
                 ["eggs", true]
             ]
