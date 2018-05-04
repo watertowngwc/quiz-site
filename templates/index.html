@@ -15,11 +15,20 @@
         <form method = "post" action = "/search">
             <input type="text" name="search" placeholder="Search...">
         </form>
+        <form action="{{url_for('about')}}">
+            <input type="submit" value="About Us" />
         <span id="category1"><a href="{{url_for('about')}}">About Us</a></span>
+        </form>
+        <form action="{{url_for('fun')}}">
+            <input type="submit" value="Fun" />
+
+            <span id="category2"><a href="{{url_for('fun')}}">Fun</a></span>
+        </form>
         <br>
-        <span id="category2"><a href="{{url_for('fun')}}">Fun</a></span>
-        <br>
+        <form action="{{url_for('index', tags='animals')}}">
+            <input type="submit" value="Animal Quizzes" />
         <span id="category3"><a href="{{url_for('index', tags='animals')}}">Animal Quizzes</a></span>
+        </form>
         <form method="post" action="/change_style">
             <input type="submit" value="Style Button">
         </form>
