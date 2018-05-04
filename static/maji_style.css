@@ -2,7 +2,7 @@
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #FFFFFF;
+    background-color: #c2b7b5;
     padding: 15px;
     font-family: 'IBM Plex Sans';
     color: #000000;
@@ -11,9 +11,9 @@
 #title {
     display: block;
     padding: 5px;
-    background-color: #FFFFFF;
+    background-color: #857d7b;
     color: #000000;
-    font-size: 100pt;
+    font-size: 60pt;
     font-weight: bold;
     text-align: center;
     font-family: 'Sonsie One';
@@ -24,7 +24,7 @@ a:link {
 
 body {
     background-color:rgb(0,0,0);
-    background-image:url(https://goo.gl/images/cteJGM);
+    background-image:url(https://ewedit.files.wordpress.com/2017/11/copy-of-children-of-blood-and-bone.jpg?crop=0px%2C1862px%2C1856px%2C975px&resize=1200%2C630);
     background-position:top left;
     background-repeat:repeat;
     background-attachment:fixed;
