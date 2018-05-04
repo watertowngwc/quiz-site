@@ -1,6 +1,7 @@
 {
     "name": "Mold",
     "description": "How much do you know about MOLD??!?",
+    "tags": ["Science"],
     "questions": [
         {
             "text": "Mold is alive",

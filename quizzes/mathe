@@ -1,6 +1,7 @@
 {
     "name": "Math",
     "description": "Do math",
+    "tags": ["Science"],
     "questions": [
         {
             "text": "1+1",

@@ -1,6 +1,7 @@
 {
     "name": "Disney Movies",
     "description": "Can you guess the Disney movie based on its iconic quote?",
+    "tags": ["Pop Culture", "Characters"],
     "questions": [
         {
             "text": "If you cant say something nice, dont say nothing at all.",

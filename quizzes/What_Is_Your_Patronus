@@ -1,38 +1,37 @@
 {
-    "name": "Are You Piesheen",
-    "description": "Which Hogwarts house do you belong to?",
+    "name": "What Is Your Patronus",
+    "description": "What Is Your Patronus?",
     "quiz_type": "sorter_quiz",
     "question_type": "radio",
-    "style_name": "Are_You_Piesheen",
-    "tags": ["Animals"],
+    "style_name": "What_Is_Your_Patronus",
+    "tags": ["animals"],
     "questions": [
         {
             "text": "Which adjective best describes you?",
             "options": [
-                ["Cat", ["Piesheen"]],
-                ["Dog", ["Dog"]],
-                ["Smart", ["Human"]],
-                ["Pie", ["Pie"]]
+                ["Playful", ["Otter"]],
+                ["Stealthy", ["Stag"]],
+                ["Funny", ["Dog"]],
+                ["Fast", ["Horse"]]
             ]
         },
         {
-            "text": "How do you walk?",
+            "text": "Which adjective best describes you (part 2)?",
             "options": [
-                ["Skip", ["Pie"]],
-                ["Run", ["Dog"]],
-                ["Lay down and scootch yourself across the floor", ["Piesheen"]],
-                ["Walk normaly (boring)", ["Human"]]
+                ["Free", ["Horse"]],
+                ["Loyal", ["Dog"]],
+                ["Quiet", ["Stag"]],
+                ["Hungry", ["Otter"]]
 
             ]
         },
         {
             "text": "Which of the following do you find most difficult to deal with but when you solve the problem, you feel... AMAZING?",
             "options": [
-                ["Hunger", ["Piesheen"]],
-                ["Math problem", ["Huamn"]],
-                ["Loneliness", ["Dog"]],
-                ["Trying to not get eaten", ["Pie"]],
-                ["Being Ignored", ["Cat"]]
+                ["Making bad puns", ["Dog"]],
+                ["Waiting for the holidays", ["Otter"]],
+                ["Loneliness", ["Horse"]],
+                ["Trying to not get eaten", ["Stag"]],
              ]
         },
         {
