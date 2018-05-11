@@ -5,7 +5,7 @@
     background-color: #303333;
     padding: 15px;
     font-family: 'Georgia';
-    color: #FFFFFF;
+    color: #FF5733;
 }
 
 #title {
@@ -24,8 +24,31 @@ a:link {
 }
 
 body {
-    background-color: #303333;
+    background-color: #707373;
     background-position:top left;
     background-repeat:repeat;
     background-attachment:fixed;
+}
+
+.metanav {
+    background: #FF5733;
+    font-family: 'Arial';
+    color: #ffe800;
+    margin-bottom: 4em;
+    padding: 1em;
+}
+
+form {
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #ffc300;
+    border: none;
+    color: white;
+    padding: 10px 27px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }

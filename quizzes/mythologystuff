@@ -1,0 +1,53 @@
+{
+    "name": "Greek Mythology!",
+    "description": "How much do you know about Greek mythology?",
+    "style_name": "yellow",
+    "tags": ["People"],
+    "questions": [
+        {
+            "text": "Who is the goddess of magic?",
+            "options": [
+                ["Aphrodite", false],
+                ["Athena", false],
+                ["Hestia", false],
+                ["Hecate", true]
+            ]
+        },
+        {
+            "text": "What was the name of the Gorgon with snakes for hair?",
+            "options":[
+                ["Medusa", true],
+                ["Stheno", false],
+                ["Euryale!", false],
+                ["Gaea", false]
+            ]
+        },
+        {
+            "text": "What was Poseidon's wife named?",
+            "options": [
+                ["Amphitrite", true],
+                ["Salacia", false],
+                ["Demeter", false],
+                ["Aphrodite", false]
+            ]
+        },
+        {
+            "text": "What is Hera's Roman counterpart named?",
+            "options": [
+                ["Ceres", false],
+                ["Juno", true],
+                ["Venus", false],
+                ["Jupiter", false]
+            ]
+        },
+        {
+            "text": "What popular book series is based off of Greek mythology?",
+            "options": [
+                ["Harry Potter", false],
+                ["Keeper of the Lost Cities", false],
+                ["The Hunger Games", false],
+                ["Percy Jackson and the Olympians", true]
+            ]
+        }
+    ]
+}

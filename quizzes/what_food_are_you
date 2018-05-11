@@ -1,0 +1,43 @@
+{
+    "name": "What food are you?",
+    "description": "Take this quiz to find out!",
+    "quiz_type": "sorter_quiz",
+    "question_type": "radio",
+    "style_name": "food_style",
+    "tags": ["Food"],
+    "questions": [
+        {
+            "text": "Which adjective best describes you?",
+            "options": [
+                ["Fast", ["Pizza"]],
+                ["Slow", ["Pie"]],
+                ["Sweet", ["Banana Split"]],
+                ["Salty", ["Pretzel"]],
+                ["Boring", ["Brocoli"]],
+                ["Active", ["Chicken"]]
+
+                ]
+        },
+        {
+            "text": "What do you like to do in your free time?",
+            "options": [
+                ["Eat", ["Pizza", "Pie", "Banana Split", "Pretzel", "Brocoli", "Chicken"]],
+                ["Exercise", ["Chicken", "Brocoli"]],
+                ["Lie on the couch and watch TV", ["Pizza"]],
+                ["Hang out with friends", ["Banana Split", "Pie"]],
+                ["Be alone", ["Pretzel"]]
+
+                ]
+        },
+        {
+            "text": "Which food place do you like the most?",
+            "options": [
+                ["Starbucks", ["Pie", "Banana Split", "Pretzel"]],
+                ["Domino's", ["Pizza"]],
+                ["Supermarket", ["Chicken", "Brocoli"]],
+                ["A restaurant", ["Pie", "Banana Split", "Pretzel" , "Chicken", "Brocoli", "Pizza"]]
+
+            ]
+        }
+    ]
+}
