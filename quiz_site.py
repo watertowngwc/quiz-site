@@ -109,7 +109,10 @@ def like(quiz_name):
     likes = json.loads(open(os.path.join('config', 'likes.json')).read())
     print(likes)
     print("This quiz currently has {} likes".format(quiz.likes))
-    quiz.likes += 1
+    if  flask.request.form['like'] == 'dislike':
+        quiz.likes += 0
+    else:
+        quiz.likes += 1
     print("NOW this quiz has {} likes".format(quiz.likes))
     likes[quiz_name] = quiz.likes
     json.dump(likes, open(os.path.join('config', 'likes.json'), 'w'))
