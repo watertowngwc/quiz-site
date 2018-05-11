@@ -43,7 +43,25 @@
             ]
         },
         {
-                "text": "IS YOUR GREEK GOD PARENT A FEMALE OR MALE ",
+            "text": "what is your favorite tool?",
+            "options": [
+                ["My phone", ["you are a mortal you don't belong in the demigod world"]],
+                ["a shovel", ["Demeter"]],
+                ["bones.", ["Hades"]],
+                ["a hammer", ["Hephaestus"]],
+                ["a mirror", ["Aphrodite"]],
+                ["a spear", ["Ares"]],
+                ["a book", ["Athena"]],
+                ["shoes", ["Hermes"]],
+                ["camouflage", ["Artemis"]],
+                ["an arrow", ["Apollo"]],
+                ["vines", ["Dionysus"]],
+                ["a trident", ["Poseidon"]],
+                ["a staff", ["Zeus"]]
+                  ]
+        },
+        {
+                "text": "is your greek god parent female or male ",
             "options": [
                 ["female", ["Artemis", "Athena", "Aphrodite", "Demeter"]],
                 ["I don't know", ["you are a mortal you don't belong in the demigod world", "Athena", "Aphrodite", "Demeter", "Zeus", "Hermes", "Apollo", "Ares", "Dionysus", "Hephaestus", "Hades", "Poseidon" ]],
@@ -51,7 +69,7 @@
             ]
         },
         {
-                "text": "WHAT ARE YOUR FAVORITE SPORTS?",
+                "text": "what are your favorite sports?",
             "options": [
                 ["Hockey", ["Hades"]],
                 ["archery", ["Apollo", "Artemis"]],
