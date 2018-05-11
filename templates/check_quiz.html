@@ -23,6 +23,11 @@
     <form method="post" action="/like/{{quiz.id}}">
         <input type="submit" value="Did you like this quiz?">
     </form>
+    <form method = "post" action = "/highscore">
+            <input type="hidden" name="quizname" value="{{quiz.id}}">
+            <input type="hidden" name="numberofpointscorrect" value="{{quiz.get_number_correct()}}">
+            <input type="text" name="personname" placeholder="Submit Your Name and Highscore">
+    </form>
     {% for question in quiz.questions %}
         <div>
             <h4 {% if question.answered_correctly %} class="question-correct" {% else %} class="question-incorrect" {% endif %}>{{question.text|safe}}</h4>

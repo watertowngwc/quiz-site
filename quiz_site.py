@@ -48,9 +48,22 @@ def index(tags=''):
 
     return flask.render_template('index.html', quiz_names=quiz_names, style_button=style_button)
 
-@app.route('/highscore')
+@app.route('/highscore', methods=['GET','POST'])
 def highscore():
-    scoreboard= [["Maeve",235634],["Rebecca", 784356789]]# no
+    quizname= flask.request.form['quizname']
+    numberofpointscorrect= flask.request.form['numberofpointscorrect']
+    personname = flask.request.form['personname']
+    scoreboard=[["Maeve", 45376822222],
+                ["hegf",5362719765]]
+    quiz = quizzes[quizname]
+    highscores = json.loads(open(os.path.join('config', 'highscores.json')).read())
+    print(highscores)
+    currenthighscore = quiz.highscore.get(personname,0)
+    newhighscore = currenthighscore + numberofpointscorrect
+    quiz.highscore[personname] = newhighscore
+    #quizhighscores = highscores[quizname].get
+    highscores[quizname][personname] = quiz.highscore[personname]
+    json.dump(highscores, open(os.path.join('config', 'highscores.json'), 'w'))
     return flask.render_template('highscore.html',scoreboard=scoreboard)
 
 @app.route('/about')
