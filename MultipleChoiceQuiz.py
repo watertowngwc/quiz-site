@@ -55,5 +55,13 @@ class MultipleChoiceQuiz(Quiz):
         for question in self.questions:
             question.grade()
 
+    
+    def get_number_correct(self):
+        number_correct = 0
+        for question in self.questions:
+            if question.answered_correctly:
+                number_correct += 1
+        return number_correct
+
     def get_template(self):
         return 'check_quiz.html'
