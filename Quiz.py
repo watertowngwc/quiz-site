@@ -108,6 +108,7 @@ class Quiz:
         self.tags = ['']   # the empty string allows for filtering for all quizzes when tag = ''
         self.id = ''
         self.likes = 0
+        self.highscore = {}
         self.parse_json(json_dict)
 
     def make_new_question(self, question_json):

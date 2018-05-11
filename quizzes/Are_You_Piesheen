@@ -1,6 +1,6 @@
 {
     "name": "Are You Piesheen",
-    "description": "Which Hogwarts house do you belong to?",
+    "description": "Are you Piesheen?",
     "quiz_type": "sorter_quiz",
     "question_type": "radio",
     "style_name": "Are_You_Piesheen",
