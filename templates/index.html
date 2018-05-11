@@ -11,33 +11,25 @@
     <div id='content'>
             <span id='title'>Quiz-O-Rama</span>
         <br>
-        <span id="category" style="font-size:160%">All Quizzes</span>
-        <form method = "post" action = "/search">
+        <div class="metanav">
+            <span id="category" style="font-size:160%">All Quizzes</span>
+            <br>
+            <form method = "post" action = "/search">
             <input type="text" name="search" placeholder="Search...">
-        </form>
-        <form action="{{url_for('about')}}">
-            <input type="submit" value="About Us" />
-        <span id="category1"><a href="{{url_for('about')}}">About Us</a></span>
-        </form>
-        <form action="{{url_for('fun')}}">
-            <input type="submit" value="Fun" />
-
-            <span id="category2"><a href="{{url_for('fun')}}">Fun</a></span>
-        </form>
-        <br>
-        <form action="{{url_for('index', tags='animals')}}">
-            <input type="submit" value="Animal Quizzes" />
-        <span id="category3"><a href="{{url_for('index', tags='Animals')}}">Animals</a></span>
-        <span id="category4"><a href="{{url_for('index', tags='People')}}">People</a></span>
-        <span id="category5"><a href="{{url_for('index', tags='Pop Culture')}}">Pop Culture</a></span>
-        <span id="category6"><a href="{{url_for('index', tags='Characters')}}">Characters</a></span>
-        <span id="category7"><a href="{{url_for('index', tags='Food')}}">Food</a></span>
-        <span id="category8"><a href="{{url_for('index', tags='Science')}}">Science</a></span>
-        <span id="category9"><a href="{{url_for('index', tags='Sort Yourself')}}">Sort Yourself</a></span>
-        </form>
-        <form method="post" action="/change_style">
-            <input type="submit" value="switch it up!">
-        </form>
+            </form>
+            <a href="{{url_for('about')}}">About Us</a> |
+            <a href="{{url_for('fun')}}">Fun</a> |
+            <a href="{{url_for('index', tags='People')}}">People</a> |
+            <a href="{{url_for('index', tags='Pop Culture')}}">Pop Culture</a> |
+            <a href="{{url_for('index', tags='Characters')}}">Characters</a> |
+            <a href="{{url_for('index', tags='Food')}}">Food</a> |
+            <a href="{{url_for('index', tags='Science')}}">Science</a> |
+            <a href="{{url_for('index', tags='Sort Yourself')}}">Sort Yourself</a> |
+            <a href="{{url_for('index', tags='Animals')}}">Animals</a>
+            <form method="post" action="/change_style">
+            <input type="submit" value="Style Button">
+            </form>
+        </div>
 
         <span id="text"><br>Play a quiz!</span>
         <ul>
