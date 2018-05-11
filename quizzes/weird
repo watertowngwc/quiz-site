@@ -18,7 +18,7 @@
             "options":[
                 ["Hawaii", false],
                 ["Greenland", true],
-                ["Ireland!", false],
+                ["Ireland", false],
                 ["Great Britan", false]
             ]
         },

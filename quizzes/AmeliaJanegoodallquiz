@@ -2,6 +2,7 @@
     "name": "How much do you know about Jane Goodall?",
     "description": "How much do you know about this women pioneer?",
     "tags": ["People"],
+    "style_name" : "janegoodall_style",
     "questions": [
         {
             "text": "What is the name of the National Geographic documentary that just came out?",
