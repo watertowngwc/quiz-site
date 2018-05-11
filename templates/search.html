@@ -12,7 +12,7 @@
         <span id="text"><br>Here are all the quizzes that match your search.</span>
         <ul>
             {% for id, name in quiz_names.items() %}
-                <li><a href="{{url_for('quiz', id=id)}}">{{name}}</a></li>
+                <li><a href="{{url_for('quiz',quiz_name=id)}}">{{name}}</a></li>
                 <br>
             {% endfor %}
         </ul>
