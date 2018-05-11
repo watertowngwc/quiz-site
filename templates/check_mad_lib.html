@@ -2,6 +2,7 @@
 {% block title %} {{quiz['name']}} {% endblock %}
 {% block page_title %}{{quiz.name}}{% endblock %}
 {% block questions %}
+    <a href="{{url_for('index')}}">All Quizzes</a>
     <form method="post" action="/like/{{quiz.id}}">
         <input type="submit" value="Did you like this quiz?">
     </form>
