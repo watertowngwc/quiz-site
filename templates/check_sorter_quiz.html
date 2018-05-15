@@ -1,16 +1,7 @@
-{% extends "quiz_base.html" %}
+{% extends "check_quiz_base.html" %}
 {% block title %} {{quiz['name']}} {% endblock %}
 {% block page_title %}{{quiz.name}} - You are a {{quiz.result}}{% endblock %}
 {% block questions %}
-    <a href="{{url_for('index')}}">All Quizzes</a>
-    <form method="post" action="/like/{{quiz.id}}">
-        <input type="submit" value="Did you like this quiz?">
-    </form>
-    <form method = "post" action = "/highscore">
-            <input type="hidden" name="quizname" value="{{quiz.id}}">
-            <input type="hidden" name="numberofpointscorrect" value="{{quiz.get_number_correct()}}">
-            <input type="text" name="personname" placeholder="Submit Your Name and Highscore">
-    </form>
     {% for question in quiz.questions %}
         <div>
             <h4>{{question.text|safe}}</h4>
