@@ -2,7 +2,7 @@
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    background-color:  #fa3d3d;
+    background-color:  #44F2FC;
     padding: 15px;
     font-family: 'Georgia';
     color: #000000;
@@ -11,8 +11,8 @@
 #title {
     display: block;
     padding: 5px;
-    background-color: #EE82EE;
-    color: #000000;
+    background-color: #2D28B2;
+    color: #FFFFFF;
     font-size: 100pt;
     font-weight: bold;
     text-align: center;
@@ -32,5 +32,9 @@ body {
 }
 
 .metanav {
-    background: #3ae8d5;
+    background: #8443DF;
+    color: #FFFFFF;
+}
+.metanav a:link {
+    color: #FFFFFF;
 }
