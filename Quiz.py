@@ -134,11 +134,7 @@ class Quiz:
         raise NotImplementedError
 
     def get_number_correct(self):
-        number_correct = 0
-        for question in self.questions:
-            if question.answered_correctly:
-                number_correct += 1
-        return number_correct
+        return 0
 
     def get_template(self):
         raise NotImplementedError

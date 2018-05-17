@@ -11,6 +11,7 @@
         <span id='title'>{% block page_title %} {% endblock %}</span>
         <a href="{{url_for('index')}}">All Quizzes</a>
         <p>{{quiz.description|safe}}</p>
+        {% block likes_and_score %} {% endblock %}
         {% block questions %} {% endblock %}
     </div>
 {% endblock %}
