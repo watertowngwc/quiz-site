@@ -19,7 +19,10 @@
     font-family: 'Berkshire Swash';
 }
 a:link {
-    color: #420db3;
+    color: #f58c23;
+
+
+
 
 }
 
@@ -34,4 +37,5 @@ body {
 
 .metanav {
     background: #3ae8d5;
+
 }
