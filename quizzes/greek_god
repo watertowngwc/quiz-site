@@ -15,7 +15,7 @@
                 ["yellow", ["Apollo"]],
                 ["blue", ["Poseidon"]],
                 ["brown", ["Hermes"]],
-                ["IDK/IDC", ["you are a mortal you don't belong in the demigod world"]],
+                ["IDK/IDC", ["mortal you don't belong in the demigod world"]],
                 ["purple", ["Dionysus"]],
                 ["red", ["Ares"]],
                 ["grey", ["Athena"]],
@@ -27,7 +27,7 @@
         {
             "text": "What are your hobbies?",
             "options": [
-            ["goin on Snapchat", ["you are a mortal you don't belong in the demigod world"]],
+            ["goin on Snapchat", ["mortal you don't belong in the demigod world"]],
             ["skydiving", ["Zeus"]],
             ["hunting", ["Artemis"]],
             ["walking along the beach", ["Poseidon"]],
@@ -45,7 +45,7 @@
         {
             "text": "what is your favorite tool?",
             "options": [
-                ["My phone", ["you are a mortal you don't belong in the demigod world"]],
+                ["My phone", ["mortal you don't belong in the demigod world"]],
                 ["a shovel", ["Demeter"]],
                 ["bones.", ["Hades"]],
                 ["a hammer", ["Hephaestus"]],
@@ -64,7 +64,7 @@
                 "text": "is your greek god parent female or male ",
             "options": [
                 ["female", ["Artemis", "Athena", "Aphrodite", "Demeter"]],
-                ["I don't know", ["you are a mortal you don't belong in the demigod world", "Athena", "Aphrodite", "Demeter", "Zeus", "Hermes", "Apollo", "Ares", "Dionysus", "Hephaestus", "Hades", "Poseidon" ]],
+                ["I don't know", ["mortal you don't belong in the demigod world", "Athena", "Aphrodite", "Demeter", "Zeus", "Hermes", "Apollo", "Ares", "Dionysus", "Hephaestus", "Hades", "Poseidon" ]],
                 ["male", ["Zeus", "Hermes", "Apollo", "Ares", "Dionysus", "Hephaestus", "Hades", "Poseidon"]]
             ]
         },
@@ -78,7 +78,7 @@
                 ["climbing", ["Demeter"]],
                 ["track and field", ["Zeus"]],
                 ["sports are overrated", ["Aphrodite"]],
-                ["ping pong", ["you are a mortal you don't belong in the demigod world"]],
+                ["ping pong", ["mortal you don't belong in the demigod world"]],
                 ["weight lifting", ["Hephaestus"]],
                 ["Competetive Eating.", ["Dionysus"]],
                 ["cross country", ["Hermes"]],
