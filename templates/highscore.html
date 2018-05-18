@@ -8,7 +8,7 @@
             <span id="c\ategory"><a href="{{url_for('index')}}">Back to the Home Page</a></span>
            <tr><td><h2>Name</h2></td><td><h2>Score</h2></td></tr>
             {% for name in scoreboard %}
-           <tr><td>{{name}}</td><td>{{scoreboard[name]}}</td></tr>
+           <tr><td>{{name[0]}}</td><td>{{name[1]}}</td></tr>
            {% endfor %}
         </table>
 

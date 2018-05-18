@@ -68,7 +68,11 @@ def highscore():
         highscores[quizname]={personname: newhighscore}
     highscores[quizname][personname] = quiz.highscore[personname]
     json.dump(highscores, open(os.path.join('config', 'highscores.json'), 'w'))
-    return flask.render_template('highscore.html',scoreboard=quiz.highscore)
+
+    #make sure highscores are sorted
+    highscores_sorted= [(name,quiz.highscore[name])for name in quiz.highscore]
+    highscores_sorted.sort(key=lambda q: q[1], reverse=True)
+    return flask.render_template('highscore.html',scoreboard=highscores_sorted)
 
 @app.route('/about')
 def about():
