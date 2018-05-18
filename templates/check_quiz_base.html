@@ -14,7 +14,7 @@
     <form method = "post" action = "/highscore">
             <input type="hidden" name="quizname" value="{{quiz.id}}">
             <input type="hidden" name="numberofpointscorrect" value="{{quiz.get_number_correct()}}">
-            <input type="text" name="personname" placeholder="Submit Your Name and Highscore">
+            <input type="text" name="personname" placeholder="Submit Your Name and Highscore" style="width:200px">
     </form>
     {% endblock %}
     {% block questions %}
