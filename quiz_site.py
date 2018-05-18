@@ -53,18 +53,22 @@ def highscore():
     quizname= flask.request.form['quizname']
     numberofpointscorrect= flask.request.form['numberofpointscorrect']
     personname = flask.request.form['personname']
-    scoreboard=[["Maeve", 45376822222],
+    scoreboard=[["rddhyf", 45376822222],
                 ["hegf",5362719765]]
     quiz = quizzes[quizname]
     highscores = json.loads(open(os.path.join('config', 'highscores.json')).read())
     print(highscores)
-    currenthighscore = quiz.highscore.get(personname,0)
-    newhighscore = currenthighscore + numberofpointscorrect
+    currenthighscore = quiz.highscore.get(personname, 0)
+    print(currenthighscore)
+    print(numberofpointscorrect)
+    newhighscore = currenthighscore + int(numberofpointscorrect)
     quiz.highscore[personname] = newhighscore
     #quizhighscores = highscores[quizname].get
+    if quizname not in highscores:
+        highscores[quizname]={personname: newhighscore}
     highscores[quizname][personname] = quiz.highscore[personname]
     json.dump(highscores, open(os.path.join('config', 'highscores.json'), 'w'))
-    return flask.render_template('highscore.html',scoreboard=scoreboard)
+    return flask.render_template('highscore.html',scoreboard=quiz.highscore)
 
 @app.route('/about')
 def about():

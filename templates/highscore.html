@@ -3,12 +3,13 @@
 {% block body %}
 <div id='content'>
         <span id='title'>Quiz Highscore</span>
-    <h2> <center>Overall Quiz Highscores </center></h2>
+    <h2> <center>Quiz Highscores</center></h2>
         <table style="width:100%">
+            <span id="c\ategory"><a href="{{url_for('index')}}">Back to the Home Page</a></span>
            <tr><td><h2>Name</h2></td><td><h2>Score</h2></td></tr>
-
-            <tr><td>{{scoreboard[0][0]}}</td><td>{{scoreboard[0][1]}}</td></tr>
-            <tr><td>{{scoreboard[1][0]}}</td><td>{{scoreboard[1][1]}}</td></tr>
+            {% for name in scoreboard %}
+           <tr><td>{{name}}</td><td>{{scoreboard[name]}}</td></tr>
+           {% endfor %}
         </table>
 
 {% endblock %}
