@@ -32,10 +32,28 @@
                 ["Red", ["Lion"]],
                 ["Grey", ["mocking bird"]],
                 ["Brown", ["Pig"]],
-                ["Pink", ["Pig"]],
-                ["Orange", ["Falcon"]],
-                ["Green", ["Dog"]],
-                ["Yellow", ["Peregrine Falcon"]]
+                ["blue", ["Falcon"]],
+                ["Green", ["Dog"]]
+            ]
+        },
+        {
+            "text": "what is a place you would like to go",
+            "options": [
+                ["I would like to go to the woods", ["mocking bird"]],
+                ["I would like to visit a farm", ["pig"]],
+                ["the savannah", ["Lion"]],
+                ["I don't know but no where cold", ["Falcon"]],
+                ["I am happy where I am right  now", ["Dog"]]
+            ]
+        },
+        {
+            "text": "what makes you most proud",
+            "options": [
+                ["being first in a race", ["Falcon"]],
+                ["making people really mad", ["mocking bird"]],
+                ["having many friends", ["Dog"]],
+                ["pouncing on people from behind", ["Lion"]],
+                ["smelling really bad", ["Pig"]]
             ]
         },
         {
